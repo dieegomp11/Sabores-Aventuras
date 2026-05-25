@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO principal -->
+  <title>Sabores de Aventuras — Comemos Albacete, plato a plato.</title>
+  <meta name="description" content="Adri y Carla reseñan los mejores restaurantes de Albacete: croquetas, kebabs, Michelin y más. Puntuaciones honestas, mapa interactivo y vídeos virales." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Adri y Carla — Sabores de Aventuras" />
+  <meta name="keywords" content="restaurantes Albacete, donde comer Albacete, reseñas restaurantes Albacete, mejores restaurantes Albacete, gastronomía Albacete, Sabores de Aventuras, foodie Albacete, cocina manchega, kebab Albacete, croquetas Albacete" />
+  <meta name="theme-color" content="#F7A8B8" />
+
+  <!-- Canonical — TODO: reemplazar con tu dominio definitivo -->
+  <link rel="canonical" href="https://dieegomp11.github.io/Sabores-Aventuras/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Open Graph (redes sociales / compartir) -->
+  <meta property="og:title" content="Sabores de Aventuras — Comemos Albacete, plato a plato." />
+  <meta property="og:description" content="Adri y Carla reseñan los mejores restaurantes de Albacete: croquetas, kebabs, Michelin y más. Puntuaciones honestas + mapa interactivo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dieegomp11.github.io/Sabores-Aventuras/" />
+  <meta property="og:image" content="https://dieegomp11.github.io/Sabores-Aventuras/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sabores de Aventuras — reseñas gastronómicas de Albacete por Adri y Carla" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Sabores de Aventuras" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sabores de Aventuras — Comemos Albacete, plato a plato." />
+  <meta name="twitter:description" content="Adri y Carla reseñan los mejores restaurantes de Albacete: croquetas, kebabs, Michelin y más." />
+  <meta name="twitter:image" content="https://dieegomp11.github.io/Sabores-Aventuras/assets/og-image.jpg" />
+
+  <!-- Datos estructurados JSON-LD (Google Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dieegomp11.github.io/Sabores-Aventuras/#website",
+        "url": "https://dieegomp11.github.io/Sabores-Aventuras/",
+        "name": "Sabores de Aventuras",
+        "description": "Reseñas honestas de los mejores restaurantes de Albacete. Por Adri y Carla.",
+        "inLanguage": "es-ES",
+        "publisher": { "@id": "https://dieegomp11.github.io/Sabores-Aventuras/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://dieegomp11.github.io/Sabores-Aventuras/#organization",
+        "name": "Sabores de Aventuras",
+        "url": "https://dieegomp11.github.io/Sabores-Aventuras/",
+        "description": "Adri y Carla, pareja albaceteña, reseñan restaurantes y rincones gastronómicos de Albacete desde mayo de 2024.",
+        "foundingDate": "2024-05",
+        "areaServed": {
+          "@type": "City",
+          "name": "Albacete",
+          "addressCountry": "ES"
+        },
+        "sameAs": [
+          "https://instagram.com/saboresdeaventuras",
+          "https://www.tiktok.com/@saboresdeaventuras",
+          "https://www.youtube.com/@saboresdeaventuras"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER — pantalla de carga
+       ══════════════════════════════════════════════════════ -->
+  <div class="loader" id="loader" aria-hidden="true" role="status">
+    <div class="loader-inner">
+      <div class="loader-plate" aria-hidden="true">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="26" stroke="#F7A8B8" stroke-width="2.5" stroke-dasharray="6 4" class="loader-ring"/>
+          <circle cx="28" cy="28" r="18" fill="#FCE6E8"/>
+          <text x="28" y="35" text-anchor="middle" font-size="18">🍽️</text>
+        </svg>
+      </div>
+      <div class="loader-logo">
+        <span class="loader-sabores">Sabores</span><span class="loader-de">de</span><span class="loader-aventuras">Aventuras</span>
+      </div>
+      <div class="loader-dots" aria-label="Cargando">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grain texture overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <div class="navbar-inner">
+
+        <!-- Logo: Sabores de Aventuras (rosa + mint, Baloo 2) -->
+        <a href="#inicio" class="navbar-logo" aria-label="Sabores de Aventuras — inicio">
+          <span class="logo-sabores">Sabores</span><span class="logo-de">de</span><span class="logo-aventuras">Aventuras</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="navbar-links" role="list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Sobre Nosotros</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#comidas">Rutas</a></li>
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <!-- Desktop social icons (círculos rosa con icono blanco) -->
+        <div class="navbar-socials">
+          <a href="https://instagram.com/saboresdeaventuras" target="_blank" rel="noopener"
+             aria-label="Instagram de Sabores de Aventuras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@saboresdeaventuras" target="_blank" rel="noopener"
+             aria-label="TikTok de Sabores de Aventuras">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.88a8.19 8.19 0 004.78 1.52V6.97a4.85 4.85 0 01-1.01-.28z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@saboresdeaventuras" target="_blank" rel="noopener"
+             aria-label="YouTube de Sabores de Aventuras">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile overlay menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú de navegación">
+      <ul class="mobile-menu-links" role="list">
+        <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="#historia" class="mobile-nav-link">Sobre Nosotros</a></li>
+        <li><a href="#videos" class="mobile-nav-link">Vídeos</a></li>
+        <li><a href="#comidas" class="mobile-nav-link">Rutas</a></li>
+        <li><a href="#mapa" class="mobile-nav-link">El Mapa</a></li>
+        <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu-socials">
+        <a href="https://instagram.com/saboresdeaventuras" target="_blank" rel="noopener"
+           aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@saboresdeaventuras" target="_blank" rel="noopener"
+           aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.88a8.19 8.19 0 004.78 1.52V6.97a4.85 4.85 0 01-1.01-.28z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO — Foodie playful pastel (rediseño completo)
+         ══════════════════════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-label="Hero de presentación">
+
+      <div class="hero-grid">
+
+        <!-- ─── Left: contenido ─── -->
+        <div class="hero-content">
+
+          <!-- Albacete sticker (brush, mint, rotado) -->
+          <span class="hero-pin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="#F7A8B8" stroke-width="2.5" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Albacete
+          </span>
+
+          <!-- Titular principal (3 líneas, 3 colores) -->
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-line hero-line-1">Probamos lugares,</span>
+            <span class="hero-line hero-line-2">vivimos sabores,</span>
+            <span class="hero-line hero-line-3">contamos aventuras.</span>
+          </h1>
+
+          <!-- Texto descriptivo -->
+          <p class="hero-subtitle">
+            Descubrimos los mejores restaurantes, recetas y rincones
+            gastronómicos allá donde vamos. Esta es nuestra aventura,
+            <strong>¿te vienes?</strong>
+          </p>
+
+          <!-- CTA principal -->
+          <a href="#mapa" class="hero-cta">
+            Explorar sabores
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+
+        </div>
+
+        <!-- ─── Right: visual ─── -->
+        <div class="hero-visual" aria-hidden="true">
+
+          <!-- Blob rosa orgánico detrás -->
+          <div class="hero-blob"></div>
+
+          <!-- Doodle: chispa rosa -->
+          <svg class="hero-doodle hero-doodle-sparkle" viewBox="0 0 40 40">
+            <path d="M20 4 L22 18 L36 20 L22 22 L20 36 L18 22 L4 20 L18 18 Z"
+                  fill="#F7A8B8"/>
+          </svg>
+
+          <!-- Doodle: círculo discontinuo -->
+          <svg class="hero-doodle hero-doodle-dashed" viewBox="0 0 60 60">
+            <circle cx="30" cy="30" r="26" fill="none" stroke="#F7A8B8"
+                    stroke-width="2" stroke-dasharray="6 5"/>
+          </svg>
+
+          <!-- Doodle: flecha curva -->
+          <svg class="hero-doodle hero-doodle-arrow" viewBox="0 0 60 60">
+            <path d="M5 30 Q30 5 55 30" fill="none" stroke="#F7A8B8"
+                  stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4"/>
+            <path d="M50 25 L55 30 L50 35" fill="none" stroke="#F7A8B8"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <!-- Imagen principal de comida -->
+          <div class="hero-img-wrap">
+            <!-- TODO: reemplazar src por foto propia de Sabores de Aventuras -->
+            <img class="hero-img"
+                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=90"
+                 alt="Hamburguesa gourmet artesanal con doble carne, queso fundido y vegetales frescos"
+                 loading="eager" />
+          </div>
+
+          <!-- Sticker circular amarillo -->
+          <div class="hero-circle">
+            <span>Comida real</span>
+            <span>Experiencias reales</span>
+            <span>Aventuras reales</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ─── Features bar (4 bloques inferiores) ─── -->
+      <div class="hero-features">
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/>
+            <path d="M7 2v20"/>
+            <path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
+          </svg>
+          <span>Probamos de todo</span>
+        </div>
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="18" cy="5" r="3"/>
+            <circle cx="6" cy="12" r="3"/>
+            <circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+          <span>Compartimos experiencias</span>
+        </div>
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Descubrimos lugares únicos</span>
+        </div>
+        <div class="hero-feature">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+          <span>Apoyamos lo local</span>
+        </div>
+      </div>
+
+      <!-- Wave mint inferior -->
+      <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,60 C240,120 480,0 720,40 C960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+              fill="#DDF0ED"/>
+      </svg>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         HISTORIA
+         ══════════════════════════════════════════════════════ -->
+    <section class="historia" id="historia" aria-labelledby="historia-title">
+      <div class="historia-inner">
+
+        <!-- Text -->
+        <div class="historia-text">
+          <span class="eyebrow reveal">Quiénes somos</span>
+
+          <h2 class="historia-title reveal" id="historia-title">
+            Cómo empezó todo
+          </h2>
+
+          <p class="historia-body reveal reveal-delay-1">
+            En mayo de 2024, <strong>Adri y Carla</strong> —pareja albaceteña de toda la vida—
+            grabaron su primer vídeo en un italiano recién abierto de la ciudad. No tenían plan,
+            ni equipo, ni guion: solo hambre, una cámara y la convicción de que Albacete escondía
+            mucho más sabor del que se cuenta.
+          </p>
+
+          <p class="historia-body reveal reveal-delay-2">
+            Hoy, casi dos años después, <strong>Sabores de Aventuras</strong> es una de las cuentas
+            gastronómicas más seguidas de la provincia. Probamos croquetas, perseguimos kebabs,
+            descubrimos panaderías de toda la vida, almuerzos baratos y locales con estrella
+            Michelin. Puntuamos sobre 10. Decimos lo que pensamos. Y volvemos a casa con la barriga llena.
+          </p>
+
+          <!-- Timeline -->
+          <div class="historia-timeline reveal reveal-delay-3" aria-label="Hitos de Sabores de Aventuras">
+            <div class="timeline-item">
+              <div class="timeline-icon" aria-hidden="true">🌱</div>
+              <div class="timeline-content">
+                <div class="timeline-date">Mayo 2024</div>
+                <div class="timeline-desc"><strong>Primer vídeo.</strong> Un italiano. Sin guion.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon" aria-hidden="true">🍽️</div>
+              <div class="timeline-content">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-desc"><strong>+100 locales</strong> reseñados en Albacete.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon" aria-hidden="true">🚗</div>
+              <div class="timeline-content">
+                <div class="timeline-date">Dic. 2025</div>
+                <div class="timeline-desc">Colaboración con <strong>Ford</strong> y el <strong>Latido Food Fest</strong>.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polaroid collage -->
+        <div class="historia-polaroids" aria-hidden="true">
+          <!-- TODO: Reemplazar por fotos propias -->
+          <div class="polaroid polaroid-1 reveal">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80"
+                 alt="Plato en restaurante de cocina creativa" />
+          </div>
+          <div class="polaroid polaroid-2 reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"
+                 alt="Mesa con varios platos de comida española" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         ALBACETE (manifiesto)
+         ══════════════════════════════════════════════════════ -->
+    <section class="albacete" id="albacete" aria-labelledby="albacete-title">
+      <div class="albacete-inner">
+
+        <h2 class="albacete-manifesto reveal" id="albacete-title">
+          Albacete<br>sabe.
+        </h2>
+
+        <p class="albacete-body reveal reveal-delay-1">
+          No vamos a Madrid a buscar lo que ya tenemos en la calle Tejares, en el Mercado
+          de Carretas o en una taberna del centro. Nuestra ruta empieza y termina aquí: en
+          la ciudad y en la provincia que conocemos de memoria — desde las croquetas con
+          estrella de <strong>La Bechamel</strong> hasta el kebab de barrio que cierra a las cuatro
+          de la madrugada.
+        </p>
+
+        <div class="chips-row reveal reveal-delay-2" role="list" aria-label="Identidad gastronómica">
+          <span class="chip chip-local" role="listitem">📍 Albacete capital</span>
+          <span class="chip chip-manchego" role="listitem">🥘 Cocina manchega</span>
+          <span class="chip chip-michelin" role="listitem">⭐ Una estrella Michelin</span>
+          <span class="chip chip-barrio" role="listitem">🥙 Sabor de barrio</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         VÍDEOS — Los más virales
+         ══════════════════════════════════════════════════════ -->
+    <section class="videos" id="videos" aria-labelledby="videos-title">
+      <div class="videos-inner">
+
+        <div class="section-header">
+          <span class="eyebrow reveal">🎬 Más vistos</span>
+          <h2 class="section-title reveal" id="videos-title">Nuestros vídeos más virales</h2>
+          <p class="section-subtitle reveal reveal-delay-1">Los que más nos han visto en TikTok e Instagram.</p>
+        </div>
+
+        <div class="videos-grid">
+
+          <!-- Vídeo 1 — TODO: reemplazar src, título y estadísticas -->
+          <article class="video-card reveal reveal-delay-1">
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_1"
+                title="Vídeo viral 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="video-platform video-platform-tiktok">TikTok</span>
+              <p class="video-title">Título del vídeo 1</p>
+              <span class="video-views">0 visualizaciones</span>
+            </div>
+          </article>
+
+          <!-- Vídeo 2 — TODO: reemplazar src, título y estadísticas -->
+          <article class="video-card reveal reveal-delay-2">
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_2"
+                title="Vídeo viral 2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="video-platform video-platform-tiktok">TikTok</span>
+              <p class="video-title">Título del vídeo 2</p>
+              <span class="video-views">0 visualizaciones</span>
+            </div>
+          </article>
+
+          <!-- Vídeo 3 — TODO: reemplazar src, título y estadísticas -->
+          <article class="video-card reveal reveal-delay-3">
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_3"
+                title="Vídeo viral 3"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="video-platform video-platform-tiktok">TikTok</span>
+              <p class="video-title">Título del vídeo 3</p>
+              <span class="video-views">0 visualizaciones</span>
+            </div>
+          </article>
+
+          <!-- Vídeo 4 — TODO: reemplazar src, título y estadísticas -->
+          <article class="video-card reveal reveal-delay-4">
+            <div class="video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_4"
+                title="Vídeo viral 4"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="video-meta">
+              <span class="video-platform video-platform-tiktok">TikTok</span>
+              <p class="video-title">Título del vídeo 4</p>
+              <span class="video-views">0 visualizaciones</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         COMIDAS
+         ══════════════════════════════════════════════════════ -->
+    <section class="comidas" id="comidas" aria-labelledby="comidas-title">
+      <div class="comidas-inner">
+
+        <div class="section-header">
+          <span class="eyebrow reveal">Categorías</span>
+          <h2 class="section-title reveal" id="comidas-title">Lo que hemos probado</h2>
+          <p class="section-subtitle reveal reveal-delay-1">Un poco de todo. Cada categoría, una ruta.</p>
+        </div>
+
+        <div class="food-grid">
+
+          <!-- 1. Croquetas -->
+          <article class="food-card-outer reveal reveal-delay-1">
+            <div class="food-card food-card-paper">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&q=80"
+                   alt="Croquetas doradas y crujientes sobre superficie de madera"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Croquetas</h3>
+                <p class="food-card-copy">Ruta de la croqueta en Ford Capri. Cinco paradas, cinco joyas: Dallas, Sueños del Este, La Bechamel, Gran Hotel, La Bonita.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Kebabs -->
+          <article class="food-card-outer reveal reveal-delay-2">
+            <div class="food-card food-card-rose">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80"
+                   alt="Pita kebab con carne, patatas fritas, tomate y cebolla"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Kebabs</h3>
+                <p class="food-card-copy">Batalla por el mejor kebab de la ciudad: Taha Turk, Kebab Albacete, La Zona Kebab.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Almuerzos -->
+          <article class="food-card-outer reveal reveal-delay-3">
+            <div class="food-card food-card-butter">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80"
+                   alt="Tostada con tomate y café con leche en desayuno español"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Almuerzos albaceteños</h3>
+                <p class="food-card-copy">Capítulos de almuerzos que no superan los 6€. Alboroque, Gaia y más.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Michelin -->
+          <article class="food-card-outer reveal reveal-delay-4">
+            <div class="food-card food-card-paper">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
+                   alt="Plato de alta cocina con presentación artística y salsa"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Cocina creativa</h3>
+                <p class="food-card-copy">La Bechamel y Keiji, lo más premium. Croqueta de jamón campeona en Madrid Fusión 2023.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Asiática -->
+          <article class="food-card-outer reveal reveal-delay-5">
+            <div class="food-card food-card-rose">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80"
+                   alt="Bol de ramen caliente con fideos, huevo y caldo oscuro"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Asiática</h3>
+                <p class="food-card-copy">Ramen, sushi y nikkei sin salir de casa: Tsuruta Ramen, Hoy Sushi, Keiji by Joel.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Hamburguesas -->
+          <article class="food-card-outer reveal reveal-delay-6">
+            <div class="food-card food-card-butter">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80"
+                   alt="Hamburguesa gourmet con doble carne, queso fundido y vegetales"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Hamburguesas y bocatas</h3>
+                <p class="food-card-copy">Brocata abrió en junio 2025 y arrasamos. También Babilonia food truck.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Tapeo -->
+          <article class="food-card-outer reveal reveal-delay-7">
+            <div class="food-card food-card-paper">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
+                   alt="Tabla de tapas españolas variadas en barra de bar"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Tapeo y manchego</h3>
+                <p class="food-card-copy">Lo de siempre, pero rico: Taberna Motivos, Tapería Dallas, Envero, Catacaldos.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Dulce -->
+          <article class="food-card-outer reveal reveal-delay-8">
+            <div class="food-card food-card-rose">
+              <!-- TODO: Reemplazar por foto propia -->
+              <img class="food-card-img"
+                   src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80"
+                   alt="Croissant de mantequilla recién horneado sobre papel"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Dulce y panadería</h3>
+                <p class="food-card-copy">Torrijas de Semana Santa, New York Rolls de pistacho y obrador: Barú, Suiza, Don Cardenal, La Noguera.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         MAPA
+         ══════════════════════════════════════════════════════ -->
+    <section class="mapa" id="mapa" aria-labelledby="mapa-title">
+      <div class="mapa-inner">
+
+        <div class="section-header">
+          <span class="eyebrow reveal">Interactivo</span>
+          <h2 class="section-title reveal" id="mapa-title">El mapa de Sabores</h2>
+          <p class="section-subtitle reveal reveal-delay-1">Busca un local o toca cualquier pin para ver foto, puntuación y opinión completa.</p>
+        </div>
+
+        <div class="mapa-layout">
+
+          <!-- Mapa + buscador flotante -->
+          <div class="mapa-container">
+
+            <div class="mapa-search" role="search">
+              <svg class="mapa-search-icon" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                   stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input type="search" id="mapa-search-input"
+                     placeholder="Buscar un local…"
+                     autocomplete="off" spellcheck="false"
+                     aria-label="Buscar restaurante en el mapa"
+                     aria-controls="mapa-search-results" />
+              <ul class="mapa-search-results" id="mapa-search-results"
+                  role="listbox" hidden></ul>
+            </div>
+
+            <div id="map" role="application"
+                 aria-label="Mapa interactivo de restaurantes reseñados en Albacete"></div>
+          </div>
+
+          <!-- Panel de detalle -->
+          <aside class="mapa-detail" id="mapa-detail" aria-live="polite">
+
+            <!-- Estado vacío -->
+            <div class="mapa-detail-empty" id="mapa-detail-empty">
+              <div class="mapa-detail-empty-icon" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <p class="mapa-detail-empty-title">Selecciona un local</p>
+              <p class="mapa-detail-empty-body">
+                Haz clic en cualquier pin del mapa o búscalo en el cuadro superior
+                para ver foto, puntuación y opinión completa.
+              </p>
+            </div>
+
+            <!-- Contenido del detalle (rellenado dinámicamente) -->
+            <article class="mapa-detail-content" id="mapa-detail-content" hidden>
+              <div class="mapa-detail-img-wrap">
+                <img id="mapa-detail-img" alt="" />
+              </div>
+              <div class="mapa-detail-body">
+                <div class="mapa-detail-meta">
+                  <span class="mapa-detail-tipo" id="mapa-detail-tipo"></span>
+                  <span class="mapa-detail-score" id="mapa-detail-score"></span>
+                </div>
+                <h3 class="mapa-detail-nombre" id="mapa-detail-nombre"></h3>
+                <p class="mapa-detail-dir" id="mapa-detail-dir"></p>
+                <p class="mapa-detail-opinion" id="mapa-detail-opinion"></p>
+                <a class="mapa-detail-cta" id="mapa-detail-cta"
+                   href="#" target="_blank" rel="noopener">
+                  Ver en Google Maps
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                       stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7M7 7h10v10"/>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTACTO
+         ══════════════════════════════════════════════════════ -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="contacto-inner">
+
+        <!-- Left: text -->
+        <div class="contacto-info">
+          <span class="eyebrow reveal">Escríbenos</span>
+
+          <h2 class="contacto-title reveal" id="contacto-title">
+            ¿Tienes un restaurante? ¿Una marca? ¿Una idea?
+          </h2>
+
+          <p class="contacto-body reveal reveal-delay-1">
+            Si quieres que visitemos tu local, colaborar con nosotros o simplemente saludar —
+            escríbenos. Leemos todo.
+          </p>
+
+          <div class="contacto-datos reveal reveal-delay-2" aria-label="Datos de contacto">
+            <div class="contacto-dato">
+              <span class="dato-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <span>Instagram:
+                <a href="https://instagram.com/saboresdeaventuras" target="_blank" rel="noopener">
+                  @saboresdeaventuras
+                </a>
+              </span>
+            </div>
+            <div class="contacto-dato">
+              <span class="dato-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.88a8.19 8.19 0 004.78 1.52V6.97a4.85 4.85 0 01-1.01-.28z"/>
+                </svg>
+              </span>
+              <span>TikTok:
+                <a href="https://www.tiktok.com/@saboresdeaventuras" target="_blank" rel="noopener">
+                  @saboresdeaventuras
+                </a>
+              </span>
+            </div>
+            <div class="contacto-dato">
+              <span class="dato-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <span>Albacete, España</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="form-card-outer reveal reveal-delay-1">
+          <div class="form-card" id="form-card">
+
+            <form id="contact-form" novalidate aria-label="Formulario de contacto">
+              <div class="form-grid">
+
+                <!-- Nombre -->
+                <div class="form-group">
+                  <label class="form-label" for="nombre">
+                    Nombre <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input class="form-input" type="text" id="nombre" name="nombre"
+                         autocomplete="name" required
+                         aria-required="true" aria-describedby="nombre-error" />
+                  <span class="form-error-msg" id="nombre-error" role="alert">
+                    Este campo es obligatorio.
+                  </span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="form-label" for="email">
+                    Email <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input class="form-input" type="email" id="email" name="email"
+                         autocomplete="email" required
+                         aria-required="true" aria-describedby="email-error" />
+                  <span class="form-error-msg" id="email-error" role="alert">
+                    Introduce un email válido.
+                  </span>
+                </div>
+
+                <!-- Soy -->
+                <div class="form-group full">
+                  <label class="form-label" for="tipo">
+                    Soy… <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <div class="form-select-wrap">
+                    <select class="form-select" id="tipo" name="tipo" required
+                            aria-required="true" aria-describedby="tipo-error">
+                      <option value="" disabled selected>Selecciona una opción</option>
+                      <option value="hostelero">Hostelero/a</option>
+                      <option value="marca">Marca / empresa</option>
+                      <option value="periodista">Periodista / medio</option>
+                      <option value="seguidor">Seguidor/a</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+                  <span class="form-error-msg" id="tipo-error" role="alert">
+                    Selecciona una opción.
+                  </span>
+                </div>
+
+                <!-- Local/marca (opcional) -->
+                <div class="form-group full">
+                  <label class="form-label" for="local">
+                    Nombre del local o marca
+                    <span style="font-weight:400;opacity:.55;font-size:.8rem;">(opcional)</span>
+                  </label>
+                  <input class="form-input" type="text" id="local" name="local"
+                         autocomplete="organization" />
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form-group full">
+                  <label class="form-label" for="mensaje">
+                    Mensaje <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea class="form-textarea" id="mensaje" name="mensaje"
+                            rows="5" required maxlength="800"
+                            aria-required="true" aria-describedby="mensaje-error mensaje-counter"
+                            placeholder="Cuéntanos qué tienes en mente..."></textarea>
+                  <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="form-error-msg" id="mensaje-error" role="alert">
+                      El mensaje es obligatorio.
+                    </span>
+                    <span class="char-counter" id="mensaje-counter" aria-live="polite">0 / 800</span>
+                  </div>
+                </div>
+
+                <!-- Privacidad -->
+                <div class="form-group full">
+                  <label class="checkbox-wrap" for="privacidad">
+                    <input type="checkbox" id="privacidad" name="privacidad" required
+                           aria-required="true" aria-describedby="privacidad-error" />
+                    <span class="checkbox-label">
+                      Acepto la
+                      <a href="#" tabindex="-1">política de privacidad</a>
+                      y el tratamiento de mis datos para responder a mi consulta.
+                    </span>
+                  </label>
+                  <span class="form-error-msg" id="privacidad-error" role="alert">
+                    Debes aceptar la política de privacidad.
+                  </span>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-group full">
+                  <button type="submit" class="btn-submit">
+                    Enviar mensaje
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- Success state -->
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <div class="form-success-icon" aria-hidden="true">🥖</div>
+              <p class="form-success-title">¡Gracias!</p>
+              <p class="form-success-body">Te responderemos pronto. Mientras tanto, síguenos en Instagram para no perderte ninguna reseña.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+
+      <!-- Logo + tagline -->
+      <div>
+        <div class="footer-logo">
+          Sabores<span class="dot">&nbsp;·&nbsp;</span>Aventuras
+        </div>
+        <p class="footer-tagline">Comemos Albacete, plato a plato.</p>
+      </div>
+
+      <!-- Nav links -->
+      <nav aria-label="Navegación del footer">
+        <ul class="footer-links" role="list">
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#albacete">Albacete</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#comidas">Comidas</a></li>
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social icons -->
+      <div>
+        <div class="footer-socials" aria-label="Redes sociales">
+          <a href="https://instagram.com/saboresdeaventuras" target="_blank" rel="noopener"
+             aria-label="Instagram de Sabores de Aventuras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@saboresdeaventuras" target="_blank" rel="noopener"
+             aria-label="TikTok de Sabores de Aventuras">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.88a8.19 8.19 0 004.78 1.52V6.97a4.85 4.85 0 01-1.01-.28z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-inner">
+      <p class="footer-bottom">
+        &copy; 2026 Sabores de Aventuras &nbsp;&middot;&nbsp; Hecho con hambre en Albacete
+      </p>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS — sin SRI para evitar fallos de hash en CDN -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Main script — al final del body, DOM ya está listo -->
+  <script src="script.js"></script>
+
+</body>
+</html>

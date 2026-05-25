@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fondo redondeado crema -->
+  <rect width="32" height="32" rx="8" fill="#FFF8F5"/>
+  <!-- Plato rosa -->
+  <circle cx="16" cy="16" r="12" fill="#FCE6E8"/>
+  <circle cx="16" cy="16" r="12" fill="none" stroke="#F7A8B8" stroke-width="2.5"/>
+  <!-- Centro mint (comida) -->
+  <circle cx="16" cy="16" r="5" fill="#9ED9D2"/>
+</svg>
