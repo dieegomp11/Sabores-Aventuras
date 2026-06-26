@@ -146,7 +146,7 @@ function initMap() {
       nombre: 'La Bechamel',
       tipo: 'Cocina creativa — Michelin',
       direccion: 'C/ Guzmán el Bueno, 4, 02002 Albacete',
-      coords: [38.9919, -1.8532],
+      coords: [38.9918908, -1.8531533],
       puntuacion: 9.5,
       imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
       opinion: 'Cocina creativa con estrella Michelin. La croqueta de jamón se llevó el primer premio en Madrid Fusión 2023 y no es marketing: se come y se entiende. Imprescindible si quieres ver qué hace Albacete en la liga de los grandes.'
@@ -155,7 +155,7 @@ function initMap() {
       nombre: 'Keiji by Joel',
       tipo: 'Nikkei',
       direccion: 'C/ Cruz, 1, 02001 Albacete',
-      coords: [38.9941, -1.8515],
+      coords: [38.9940662, -1.8515342],
       puntuacion: 9.0,
       imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
       opinion: 'Joel hace en Albacete lo que no esperarías de un nikkei de provincia. El canelón de aguacate y el nigiri de atún rojo son la prueba: aquí se cocina con cabeza y producto serio.'
@@ -164,7 +164,7 @@ function initMap() {
       nombre: 'Taberna Motivos',
       tipo: 'Tapeo',
       direccion: 'C/ Jesús Nazareno, 6, 02002 Albacete',
-      coords: [38.9909, -1.8537],
+      coords: [38.9909194, -1.8536700],
       puntuacion: 9.2,
       imagen: 'https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=800&q=80',
       opinion: 'Para nosotros, las mejores croquetas de la ciudad. Punto. Por 18,50 € comes un menú al que no se le puede poner ninguna pega — y tomamos café con leche caliente al salir.'
@@ -173,7 +173,7 @@ function initMap() {
       nombre: 'Tapería Dallas',
       tipo: 'Tapeo',
       direccion: 'Pl. Maestro Chueca, 13, 02005 Albacete',
-      coords: [39.0021, -1.8666],
+      coords: [39.0021291, -1.8665760],
       puntuacion: 8.5,
       imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
       opinion: 'Croqueta de txangurro y de piquillo. Las dos te las acabas mojando en la salsa que sobra. Sitio honesto, sin filtros, con producto que se nota.'
@@ -227,7 +227,7 @@ function initMap() {
       nombre: 'Oleana',
       tipo: 'Tapeo',
       direccion: 'C/ Caba, 23, 02001 Albacete',
-      coords: [38.9935, -1.8593],
+      coords: [38.9935090, -1.8592978],
       puntuacion: 8.3,
       imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
       opinion: 'Bravas en serio, croquetas decentes y la carta gluten-free no es decorativa: tienen platos reales. Aquí entras y nadie celíaco siente que molesta.'
@@ -236,7 +236,7 @@ function initMap() {
       nombre: 'Brocata',
       tipo: 'Bocatería gourmet',
       direccion: 'C/ Hermanos Jiménez, 3, 02004 Albacete',
-      coords: [38.9960, -1.8674],
+      coords: [38.9960051, -1.8673686],
       puntuacion: 8.9,
       imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
       opinion: 'Abrieron en junio de 2025 y arrasaron. El bocata "Brocata" y el sandwich japonés son los dos platos que ya hemos hecho virales. Una de las mejores aperturas del año.'
@@ -245,7 +245,7 @@ function initMap() {
       nombre: 'Kebab Albacete',
       tipo: 'Kebab',
       direccion: 'C/ Baños, 7, 02004 Albacete',
-      coords: [38.9950, -1.8602],
+      coords: [38.9950456, -1.8601675],
       puntuacion: 9.1,
       imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
       opinion: 'El kebab que nos dio el vídeo más viral. Carne marinada como pocas, salsa de yogur hecha en casa, pan tierno. No es kebab de turismo, es kebab de los que repites.'
@@ -254,7 +254,7 @@ function initMap() {
       nombre: 'Taha Turk Kebab',
       tipo: 'Kebab',
       direccion: 'Av. Ramón Menéndez Pidal, 40, 02005 Albacete',
-      coords: [39.0023, -1.8637],
+      coords: [39.0022637, -1.8636986],
       puntuacion: 8.5,
       imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
       opinion: 'Kebab pakistaní con feta, una combinación poco común. Nota 8,5/10 y volvemos seguro: el feta cambia la jugada.'
@@ -272,7 +272,7 @@ function initMap() {
       nombre: 'Hoy Sushi',
       tipo: 'Asiática',
       direccion: 'C/ Feria, 73, 02004 Albacete',
-      coords: [38.9962, -1.8639],
+      coords: [38.9962129, -1.8639267],
       puntuacion: 7.5,
       imagen: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
       opinion: 'Buffet japonés que cumple en zona feria. El tartar de atún picante es el plato que justifica reservar otra vez.'
@@ -281,7 +281,7 @@ function initMap() {
       nombre: 'Milanga Love',
       tipo: 'Argentina',
       direccion: 'Av. Arquitecto Julio Carrilero, 40, 02005 Albacete',
-      coords: [38.9985, -1.8654],
+      coords: [38.9984937, -1.8653767],
       puntuacion: 8.0,
       imagen: 'https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=800&q=80',
       opinion: 'Empanadilla de ternera con masa que se deshace. Cocina argentina sin pretensiones, honesta, de las que quitan el hambre y dejan ganas de volver.'
@@ -299,7 +299,7 @@ function initMap() {
       nombre: 'Alboroque',
       tipo: 'Almuerzo',
       direccion: 'Pq. Emp. Campollano, C/ C, 16, 02007 Albacete',
-      coords: [39.0121, -1.8786],
+      coords: [39.0120965, -1.8785972],
       puntuacion: 8.4,
       imagen: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
       opinion: 'Chivito completo más bebida más café por 5,80 €. Nota 8,40 de almuerzo trabajador que no te falla nunca. Si vas a la zona de Campollano, paras aquí.'
@@ -308,10 +308,415 @@ function initMap() {
       nombre: 'La Monda Lironda',
       tipo: 'Tapeo',
       direccion: 'C/ Vienne, 1, 02005 Albacete',
-      coords: [39.0070, -1.8681],
+      coords: [39.0070350, -1.8681204],
       puntuacion: 7.8,
       imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
       opinion: 'Caracoles bien hechos y hamburguesas serias en la carretera de Madrid. Sitio para ir con tiempo y reservar mesa los fines de semana.'
+    },
+    {
+      nombre: 'HAN FU Barbacoa Coreana',
+      tipo: 'Barbacoa coreana',
+      direccion: 'C/ Tejares, 13, 02002 Albacete',
+      coords: [38.9914786, -1.8535943],
+      puntuacion: 8.8,
+      imagen: 'https://images.unsplash.com/photo-1583187854833-1d0c2f9f2ba5?w=800&q=80',
+      opinion: 'Barbacoa coreana de hacerte tú la carne en la mesa. El bulgogi de ternera marinado y el pollo picante con kimchi son un planazo en grupo. Sales oliendo a brasa y feliz.'
+    },
+    {
+      nombre: 'La Yema',
+      tipo: 'Bar',
+      direccion: 'C/ Tejares, 17, 02002 Albacete',
+      coords: [38.9914037, -1.8536421],
+      puntuacion: 8,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Bar de barrio de los de toda la vida en Tejares. Tapa generosa con la caña, trato cercano y precios de otra época. De los que no fallan para un vermut de mediodía.'
+    },
+    {
+      nombre: 'Delicias de Oriente',
+      tipo: 'Asiática',
+      direccion: 'Plaza Periodista Antonio Andújar, 16A, 02005 Albacete',
+      coords: [38.9965647, -1.8584784],
+      puntuacion: 8.2,
+      imagen: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+      opinion: 'Buffet asiático con muchísima variedad y rotación rápida, así que todo sale fresco. El pato a la naranja y los rollitos caseros son lo que más repetimos.'
+    },
+    {
+      nombre: 'St. Patrick’s',
+      tipo: 'Pub',
+      direccion: 'Plaza Periodista Antonio Andújar, 1, 02001 Albacete',
+      coords: [38.9963914, -1.8581910],
+      puntuacion: 8.3,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Pub irlandés con tirada de cerveza seria y ambiente top los findes. La Guinness bien servida y las alitas picantes acompañan cualquier partido. Clásico del centro.'
+    },
+    {
+      nombre: 'Gaia',
+      tipo: 'Almuerzos',
+      direccion: 'C/ Daoiz, 5, 02004 Albacete',
+      coords: [38.9949735, -1.8698890],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+      opinion: 'Almuerzos de cuchara y plato contundente sin pasarte de presupuesto. El bocadillo de panceta y el café con leche cumplen como el primer día. Sitio de currantes.'
+    },
+    {
+      nombre: 'Kebab Estambul Gratinado',
+      tipo: 'Kebab',
+      direccion: 'C/ Feria, 121, 02004 Albacete',
+      coords: [38.9961905, -1.8678108],
+      puntuacion: 8.4,
+      imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
+      opinion: 'El kebab gratinado al horno marca la diferencia: queso fundido por encima y carne jugosa por dentro. Distinto a lo habitual y engancha. Buen tamaño por el precio.'
+    },
+    {
+      nombre: 'Merendero San Ginés',
+      tipo: 'Merendero',
+      direccion: 'Camino de San Ginés, s/n, 02006 Albacete',
+      coords: [38.9786913, -1.8638851],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+      opinion: 'Merendero a las afueras ideal para gachas y migas con los amigos. Producto de la tierra, raciones generosas y sobremesa larga. Albacete manchego de verdad.'
+    },
+    {
+      nombre: 'Loops',
+      tipo: 'Dulce',
+      direccion: 'C.C. Albacenter, C/ Alcalde Conangla, s/n, 02002 Albacete',
+      coords: [38.9906841, -1.8463686],
+      puntuacion: 8.1,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'Donuts artesanos rellenos que entran solos. El de pistacho y el de Lotus son una perdición y el café acompaña. Capricho dulce en pleno Albacenter.'
+    },
+    {
+      nombre: 'Alba Kebab',
+      tipo: 'Kebab',
+      direccion: 'C/ Cid, 45, 02002 Albacete',
+      coords: [38.9913978, -1.8486137],
+      puntuacion: 8,
+      imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
+      opinion: 'Kebab honrado en la calle Cid: carne marinada, salsas caseras y durum bien liado. Cumple a cualquier hora y el precio sigue siendo imbatible.'
+    },
+    {
+      nombre: 'Khan Kebab',
+      tipo: 'Kebab',
+      direccion: 'C/ Octavio Cuartero, 53, 02003 Albacete',
+      coords: [38.9922767, -1.8612153],
+      puntuacion: 8.2,
+      imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
+      opinion: 'Cadena local que mantiene el nivel en todos sus puntos. Carne abundante, pan tierno y salsa de ajo seria. Para un antojo rápido va sobrado.'
+    },
+    {
+      nombre: 'El Patio de la Mañica',
+      tipo: 'Almuerzos',
+      direccion: 'C/ A, 39, 02007 Albacete (Pol. Campollano)',
+      coords: [39.0180935, -1.8779947],
+      puntuacion: 8.7,
+      imagen: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+      opinion: 'Almuerzo de polígono de los buenos: plato del día abundante, postre casero y café por menos de lo que esperas. En Campollano es parada obligada.'
+    },
+    {
+      nombre: 'MasterChef Kebab',
+      tipo: 'Kebab',
+      direccion: 'C/ María Marín, 40, 02003 Albacete',
+      coords: [38.9896276, -1.8628356],
+      puntuacion: 7.9,
+      imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
+      opinion: 'Kebab correcto en María Marín, con buena mano para las salsas. El durum mixto llena de sobra y el servicio es rápido. Cumple lo que promete.'
+    },
+    {
+      nombre: 'Xpecado',
+      tipo: 'Hamburguesas',
+      direccion: 'C/ Gaona, 16, 02001 Albacete',
+      coords: [38.9938640, -1.8533913],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+      opinion: 'Hamburguesas smash bien ejecutadas: pan brioche, carne jugosa y patatas crujientes. La de doble queso y bacon es un pecado, nunca mejor dicho.'
+    },
+    {
+      nombre: 'El Filo de la Navaja',
+      tipo: 'Restaurante',
+      direccion: 'C/ Ríos Rosas, 5, 02004 Albacete',
+      coords: [38.9938812, -1.8605292],
+      puntuacion: 8.8,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Cocina de producto con puntos clavados. El arroz meloso y el rabo de toro están a un nivel alto. Carta corta pero todo bien pensado.'
+    },
+    {
+      nombre: 'La Fresería',
+      tipo: 'Heladería',
+      direccion: 'C/ Rosario, 45, 02001 Albacete',
+      coords: [38.9928881, -1.8573740],
+      puntuacion: 8.4,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'Helado artesano cremoso y fresa natural que se nota. El cucurucho de pistacho y los granizados salvan cualquier tarde de verano albaceteño.'
+    },
+    {
+      nombre: 'La Mediterránea',
+      tipo: 'Restaurante',
+      direccion: 'C/ Feria, 6, 02005 Albacete',
+      coords: [38.9958342, -1.8585762],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Cocina mediterránea de mercado en plena Feria. Pescaíto fresco, arroces de los que repites y buen vino. Sitio fiable para una comida con tiempo.'
+    },
+    {
+      nombre: 'Cuerda',
+      tipo: 'Restaurante',
+      direccion: 'C/ Gracia, 8, 02005 Albacete',
+      coords: [39.0008883, -1.8632283],
+      puntuacion: 8.7,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Propuesta moderna con producto local y presentaciones cuidadas. Los platos para compartir vuelan y la carta de vinos acompaña. Una grata sorpresa.'
+    },
+    {
+      nombre: 'La Duna',
+      tipo: 'Restaurante',
+      direccion: 'Av. Arquitecto Julio Carrilero, 2, 02005 Albacete',
+      coords: [39.0002357, -1.8617866],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Ambiente top y cocina fusión que entra por los ojos y por la boca. El tartar y los bao bun son los fijos de la mesa. Para quedar bien, acierto seguro.'
+    },
+    {
+      nombre: 'Burger Lab',
+      tipo: 'Hamburguesas',
+      direccion: 'C.C. Imaginalia, Av. de la Ilustración, 51, 02006 Albacete',
+      coords: [39.0075632, -1.8799147],
+      puntuacion: 8.9,
+      imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+      opinion: 'Hamburguesas gourmet con carne madurada y combinaciones atrevidas que funcionan. La Lab con cebolla caramelizada es un must. De las mejores de la ciudad.'
+    },
+    {
+      nombre: 'La Noguera',
+      tipo: 'Dulce',
+      direccion: 'C/ Zapateros, 8, 02001 Albacete',
+      coords: [38.9952837, -1.8575263],
+      puntuacion: 8.8,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'La tarta de queso al horno es de las que recuerdas: cremosa por dentro, justa de dulzor. Obrador serio en Zapateros. El café también va fino.'
+    },
+    {
+      nombre: 'Magna Casinos',
+      tipo: 'Cafetería',
+      direccion: 'Plaza Gabriel Lodares, 4, 02002 Albacete',
+      coords: [38.9908092, -1.8564281],
+      puntuacion: 8.2,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Cafetería de toda la vida en Lodares para desayunar como Dios manda. Tostada con tomate, buen café y terraza para ver pasar la mañana. Clásico que no falla.'
+    },
+    {
+      nombre: 'Farah Kebab',
+      tipo: 'Kebab',
+      direccion: 'C/ María Marín, 34, 02003 Albacete',
+      coords: [38.9891459, -1.8621015],
+      puntuacion: 8.1,
+      imagen: 'https://images.unsplash.com/photo-1548340748-6af6a29ca4e0?w=800&q=80',
+      opinion: 'Kebab abundante y sabroso con salsas que pican lo justo. Varios puntos en la ciudad y siempre cumplen. El durum de pollo es apuesta segura.'
+    },
+    {
+      nombre: 'Vibra Burger',
+      tipo: 'Hamburguesas',
+      direccion: 'Av. de la Mancha, 2, 02006 Albacete',
+      coords: [39.0069063, -1.8691232],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+      opinion: 'Smash burgers con buen sello y patatas que enganchan. Local nuevo con buen rollo frente a la Ciudad de la Justicia. La doble con cheddar manda.'
+    },
+    {
+      nombre: 'Titanic II',
+      tipo: 'Restaurante',
+      direccion: 'C/ Ríos Rosas, 102, 02004 Albacete',
+      coords: [38.9884457, -1.8658566],
+      puntuacion: 8.3,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Cocina casera de raciones generosas y precio amable. Las carnes a la brasa y el entrecot salen en su punto. Para comer mucho y bien sin complicarse.'
+    },
+    {
+      nombre: 'Monumental',
+      tipo: 'Cafetería',
+      direccion: 'C/ Concepción, 33, 02002 Albacete',
+      coords: [38.9931338, -1.8526450],
+      puntuacion: 8,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Cafetería clásica en Concepción para un desayuno o una merienda tranquila. Bollería fresca, café correcto y servicio de barrio. Punto de encuentro de siempre.'
+    },
+    {
+      nombre: 'Barra de Pintxos',
+      tipo: 'Pintxos',
+      direccion: 'Plaza del Altozano, 6, 02001 Albacete',
+      coords: [38.9945341, -1.8545797],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Pintxos variados y bien montados en pleno Altozano. La barra entra por los ojos y el de solomillo con foie es un fijo. Tapeo de pie del bueno.'
+    },
+    {
+      nombre: 'El Águila',
+      tipo: 'Tapeo',
+      direccion: 'C/ Virgen del Pilar, 14, 02006 Albacete',
+      coords: [39.0033821, -1.8670580],
+      puntuacion: 8.2,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Tapeo de barrio honesto con buena tapa de regalo. Las bravas y el lomo a la plancha acompañan la caña perfecta. Sin postureo, solo bueno y barato.'
+    },
+    {
+      nombre: 'Anubis Coctelería',
+      tipo: 'Coctelería',
+      direccion: 'Plaza del Altozano, 6, 02001 Albacete',
+      coords: [38.9946557, -1.8545463],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Coctelería con combinados de autor bien equilibrados y ambiente cuidado. El gin-tonic de la casa y los premium para empezar la noche fino.'
+    },
+    {
+      nombre: 'Princesa Maya',
+      tipo: 'Mexicana',
+      direccion: 'C/ Mayor, 55, 02002 Albacete',
+      coords: [38.9930045, -1.8537636],
+      puntuacion: 8.4,
+      imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
+      opinion: 'Mexicano auténtico con tacos al pastor jugosos y guacamole recién hecho. La margarita acompaña y el picante es de verdad. Fiesta para el paladar.'
+    },
+    {
+      nombre: 'Ramen Kagura',
+      tipo: 'Asiática',
+      direccion: 'C/ Salamanca, 7, 02001 Albacete',
+      coords: [38.9953677, -1.8527723],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+      opinion: 'Ramen de caldo trabajado durante horas, fideos al punto y chashu que se deshace. El tonkotsu es de los mejores de Albacete. Cuenco que reconforta.'
+    },
+    {
+      nombre: 'Don Cardenal',
+      tipo: 'Dulce',
+      direccion: 'C/ Torres Quevedo, 14, 02003 Albacete',
+      coords: [38.9928416, -1.8601268],
+      puntuacion: 8.7,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'Pastelería de las de vitrina que te hace dudar. Los miguelitos y las tartas por encargo son de matrícula. Tradición repostera albaceteña en estado puro.'
+    },
+    {
+      nombre: 'La Tía Juana',
+      tipo: 'Mexicana',
+      direccion: 'C/ Tejares, 16, 02002 Albacete',
+      coords: [38.9914887, -1.8538753],
+      puntuacion: 8.3,
+      imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
+      opinion: 'Mexicano con nachos cargados y burritos que llenan de sobra. Ambiente animado en Tejares y margaritas para acompañar. Para ir en grupo, ideal.'
+    },
+    {
+      nombre: 'Heladería Piaccere',
+      tipo: 'Heladería',
+      direccion: 'C/ Concepción, 10, 02002 Albacete',
+      coords: [38.9941740, -1.8551792],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'Helado artesano italiano con sabores que cambian según temporada. El stracciatella y el de avellana están de cine. Cucurucho obligado paseando por el centro.'
+    },
+    {
+      nombre: 'Seven Joy',
+      tipo: 'Asiática',
+      direccion: 'C/ Municipio de Molinicos, 7, 02006 Albacete',
+      coords: [39.0084841, -1.8727780],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+      opinion: 'Sushi fresco y buffet con muchísima variedad junto a Imaginalia. Los makis crujientes y el salmón flameado son los fijos. Calidad y cantidad muy bien resueltas.'
+    },
+    {
+      nombre: 'Luzia Gastrobar',
+      tipo: 'Gastrobar',
+      direccion: 'Paseo de la Cuba, 33, 02005 Albacete',
+      coords: [39.0043558, -1.8591934],
+      puntuacion: 8.7,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Gastrobar con tapas de autor y producto de temporada en el Paseo de la Cuba. El steak tartar y las croquetas cremosas marcan nivel. Para picar fino.'
+    },
+    {
+      nombre: 'Panadería Esparcia',
+      tipo: 'Panadería',
+      direccion: 'Camino de la Virgen, 41, 02005 Albacete',
+      coords: [39.0006256, -1.8674521],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'Pan de masa madre de verdad y bollería que huele a horno desde la calle. La barra rústica y los croissants son un clásico. Panadería de confianza.'
+    },
+    {
+      nombre: 'Restaurante +Ideas',
+      tipo: 'Restaurante',
+      direccion: 'Av. de la Libertad, 3, 02694 Higueruela',
+      coords: [38.9626090, -1.4437340],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Vale la escapada a Higueruela: cocina con producto de la tierra y platos de cuchara que reconfortan. Las migas y el cordero salen serios. Trato familiar.'
+    },
+    {
+      nombre: 'Cañitas Maite',
+      tipo: 'Cocina creativa',
+      direccion: 'C/ Tomás Pérez Úbeda, 6, 02200 Casas-Ibáñez',
+      coords: [39.2873459, -1.4694905],
+      puntuacion: 9.4,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Alta cocina de Javier Sanz y Juan Sahuquillo, dos estrellas Michelin que se entienden en cada bocado. Menú degustación de los que se recuerdan durante años. Templo gastronómico de la provincia.'
+    },
+    {
+      nombre: 'Tapería Da Vinci 19',
+      tipo: 'Tapeo',
+      direccion: 'C/ La Paz, 16, 02200 Casas-Ibáñez',
+      coords: [39.2863767, -1.4727785],
+      puntuacion: 8.6,
+      imagen: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+      opinion: 'Tapería con producto serio y tapas creativas en Casas-Ibáñez. Mayte y su equipo te tratan de lujo. La croqueta y el atún rojo merecen el viaje.'
+    },
+    {
+      nombre: 'Miguelitos Ruiz',
+      tipo: 'Dulce',
+      direccion: 'Zona Ind. el Amanecer, Autovía de Alicante, 02630 La Roda',
+      coords: [39.1988328, -2.1412242],
+      puntuacion: 8.8,
+      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      opinion: 'El miguelito de La Roda en su salsa: hojaldre crujiente y crema infinita. Fábrica con tienda donde caen recién hechos. Imposible parar en uno.'
+    },
+    {
+      nombre: 'Las Mariquillas del Río Júcar',
+      tipo: 'Restaurante',
+      direccion: 'Valdeganga (Albacete), junto al río Júcar, 02150',
+      coords: [39.1363820, -1.7476610],
+      puntuacion: 8.7,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Comer junto al Júcar con gachas, ajoarriero y pescado de río. Entorno espectacular y cocina manchega de la buena. Escapada redonda desde Albacete.'
+    },
+    {
+      nombre: 'Casa Juanjo',
+      tipo: 'Restaurante',
+      direccion: 'Av. Castilla, 12, 16230 Villanueva de la Jara',
+      coords: [39.4397773, -1.9484167],
+      puntuacion: 8.5,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Cocina manchega abundante y bien hecha en Villanueva de la Jara. El cordero y las migas con tropezones cumplen de sobra. Trato cercano de pueblo.'
+    },
+    {
+      nombre: 'Babilonia Club',
+      tipo: 'Hamburguesas',
+      direccion: 'Av. Eugenio Martínez, 48, 16239 Casasimarro',
+      coords: [39.3978691, -2.0362799],
+      puntuacion: 8.3,
+      imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+      opinion: 'Hamburguesas serias con música en directo en Casasimarro. Plan completo: cenas bien y te quedas a la fiesta. La burger con bacon y el ambiente mandan.'
+    },
+    {
+      nombre: 'El Buen Paladar',
+      tipo: 'Colombiana',
+      direccion: 'C/ Luis de Góngora, s/n, 30011 Murcia',
+      coords: [37.9779816, -1.1252981],
+      puntuacion: 8.4,
+      imagen: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+      opinion: 'Cocina colombiana auténtica: bandeja paisa que alimenta para el día entero y arepas recién hechas. Sabor casero y porciones de campeonato. Sorpresa en Murcia.'
+    },
+    {
+      nombre: 'The VicBros Burger',
+      tipo: 'Hamburguesas',
+      direccion: 'Carrer lo Torrent, 1, 03690 San Vicente del Raspeig (Alicante)',
+      coords: [38.3946073, -0.5144098],
+      puntuacion: 8.8,
+      imagen: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+      opinion: 'Smash burgers de las que crean afición: carne jugosa, queso fundido y pan brioche tostado. Merece el desvío a San Vicente. La doble bacon es ley.'
     },
   ];
 
@@ -435,7 +840,9 @@ function initMap() {
 
     if (img)     { img.src = r.imagen; img.alt = 'Foto representativa de ' + r.nombre; }
     if (tipo)    tipo.textContent = r.tipo;
-    if (score)   score.textContent = r.puntuacion.toFixed(1) + ' / 10';
+    if (score)   score.textContent = (typeof r.puntuacion === 'number')
+                                        ? r.puntuacion.toFixed(1) + ' / 10'
+                                        : r.puntuacion;
     if (nombre)  nombre.textContent = r.nombre;
     if (dir)     dir.textContent = r.direccion;
     if (opinion) opinion.textContent = r.opinion;

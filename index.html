@@ -16,8 +16,10 @@
   <link rel="canonical" href="https://dieegomp11.github.io/Sabores-Aventuras/" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
   <!-- Open Graph (redes sociales / compartir) -->
   <meta property="og:title" content="Sabores de Aventuras — Comemos Albacete, plato a plato." />
@@ -86,16 +88,7 @@
        ══════════════════════════════════════════════════════ -->
   <div class="loader" id="loader" aria-hidden="true" role="status">
     <div class="loader-inner">
-      <div class="loader-plate" aria-hidden="true">
-        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-          <circle cx="28" cy="28" r="26" stroke="#F7A8B8" stroke-width="2.5" stroke-dasharray="6 4" class="loader-ring"/>
-          <circle cx="28" cy="28" r="18" fill="#FCE6E8"/>
-          <text x="28" y="35" text-anchor="middle" font-size="18">🍽️</text>
-        </svg>
-      </div>
-      <div class="loader-logo">
-        <span class="loader-sabores">Sabores</span><span class="loader-de">de</span><span class="loader-aventuras">Aventuras</span>
-      </div>
+      <img src="logo.png" alt="Sabores de Aventuras" class="loader-logo-img" />
       <div class="loader-dots" aria-label="Cargando">
         <span></span>
         <span></span>
@@ -116,7 +109,7 @@
 
         <!-- Logo: Sabores de Aventuras (rosa + mint, Baloo 2) -->
         <a href="#inicio" class="navbar-logo" aria-label="Sabores de Aventuras — inicio">
-          <span class="logo-sabores">Sabores</span><span class="logo-de">de</span><span class="logo-aventuras">Aventuras</span>
+          <img src="logo.png" alt="Sabores de Aventuras" class="navbar-logo-img" />
         </a>
 
         <!-- Desktop links -->
@@ -125,6 +118,7 @@
           <li><a href="#historia">Sobre Nosotros</a></li>
           <li><a href="#videos">Vídeos</a></li>
           <li><a href="#comidas">Rutas</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#mapa">Mapa</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -172,6 +166,7 @@
         <li><a href="#historia" class="mobile-nav-link">Sobre Nosotros</a></li>
         <li><a href="#videos" class="mobile-nav-link">Vídeos</a></li>
         <li><a href="#comidas" class="mobile-nav-link">Rutas</a></li>
+        <li><a href="#testimonios" class="mobile-nav-link">Testimonios</a></li>
         <li><a href="#mapa" class="mobile-nav-link">El Mapa</a></li>
         <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
       </ul>
@@ -272,10 +267,9 @@
 
           <!-- Imagen principal de comida -->
           <div class="hero-img-wrap">
-            <!-- TODO: reemplazar src por foto propia de Sabores de Aventuras -->
             <img class="hero-img"
-                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=90"
-                 alt="Hamburguesa gourmet artesanal con doble carne, queso fundido y vegetales frescos"
+                 src="hero.jpeg"
+                 alt="Adri y Carla de Sabores de Aventuras"
                  loading="eager" />
           </div>
 
@@ -352,55 +346,38 @@
           </h2>
 
           <p class="historia-body reveal reveal-delay-1">
-            En mayo de 2024, <strong>Adri y Carla</strong> —pareja albaceteña de toda la vida—
-            grabaron su primer vídeo en un italiano recién abierto de la ciudad. No tenían plan,
-            ni equipo, ni guion: solo hambre, una cámara y la convicción de que Albacete escondía
-            mucho más sabor del que se cuenta.
+            Somos <strong>Adri y Carla</strong>, pareja albaceteña de toda la vida.
+            En mayo de 2024 grabamos nuestro primer vídeo en un italiano recién abierto
+            de la ciudad. No teníamos plan, ni equipo, ni guion. Solo hambre, una cámara
+            y la convicción de que Albacete escondía mucho más sabor del que se cuenta.
           </p>
 
           <p class="historia-body reveal reveal-delay-2">
-            Hoy, casi dos años después, <strong>Sabores de Aventuras</strong> es una de las cuentas
-            gastronómicas más seguidas de la provincia. Probamos croquetas, perseguimos kebabs,
-            descubrimos panaderías de toda la vida, almuerzos baratos y locales con estrella
-            Michelin. Puntuamos sobre 10. Decimos lo que pensamos. Y volvemos a casa con la barriga llena.
+            Lo que empezó como un capricho de dos foodies se convirtió en una pasión.
+            Casi dos años después, <strong>Sabores de Aventuras</strong> es una de las
+            cuentas gastronómicas más seguidas de la provincia. Probamos croquetas,
+            perseguimos kebabs y descubrimos panaderías de toda la vida, almuerzos
+            baratos y locales con estrella Michelin. Puntuamos sobre 10, decimos lo que
+            pensamos y volvemos a casa con la barriga llena.
           </p>
 
-          <!-- Timeline -->
-          <div class="historia-timeline reveal reveal-delay-3" aria-label="Hitos de Sabores de Aventuras">
-            <div class="timeline-item">
-              <div class="timeline-icon" aria-hidden="true">🌱</div>
-              <div class="timeline-content">
-                <div class="timeline-date">Mayo 2024</div>
-                <div class="timeline-desc"><strong>Primer vídeo.</strong> Un italiano. Sin guion.</div>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-icon" aria-hidden="true">🍽️</div>
-              <div class="timeline-content">
-                <div class="timeline-date">2025</div>
-                <div class="timeline-desc"><strong>+100 locales</strong> reseñados en Albacete.</div>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-icon" aria-hidden="true">🚗</div>
-              <div class="timeline-content">
-                <div class="timeline-date">Dic. 2025</div>
-                <div class="timeline-desc">Colaboración con <strong>Ford</strong> y el <strong>Latido Food Fest</strong>.</div>
-              </div>
-            </div>
-          </div>
+          <p class="historia-body reveal reveal-delay-2">
+            Pero la cosa no acaba en la ciudad. También documentamos nuestras
+            <strong>escapadas y viajes</strong>, porque la buena gastronomía no tiene
+            fronteras. Nos encanta Albacete y por eso intentamos darlo a conocer de la
+            mejor manera posible, aunque la aventura nos lleve cada vez más lejos.
+          </p>
         </div>
 
         <!-- Polaroid collage -->
-        <div class="historia-polaroids" aria-hidden="true">
-          <!-- TODO: Reemplazar por fotos propias -->
+        <div class="historia-polaroids">
           <div class="polaroid polaroid-1 reveal">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80"
-                 alt="Plato en restaurante de cocina creativa" />
+            <img src="quienes%20somos.jpg"
+                 alt="Adri y Carla de Sabores de Aventuras" loading="lazy" />
           </div>
           <div class="polaroid polaroid-2 reveal reveal-delay-2">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"
-                 alt="Mesa con varios platos de comida española" />
+            <img src="quienesomos2.jpg"
+                 alt="Adri y Carla grabando una reseña" loading="lazy" />
           </div>
         </div>
 
@@ -413,23 +390,67 @@
     <section class="albacete" id="albacete" aria-labelledby="albacete-title">
       <div class="albacete-inner">
 
-        <h2 class="albacete-manifesto reveal" id="albacete-title">
-          Albacete<br>sabe.
-        </h2>
+        <div class="albacete-left">
+          <h2 class="albacete-manifesto reveal" id="albacete-title">
+            Albacete<br>sabe.
+          </h2>
 
-        <p class="albacete-body reveal reveal-delay-1">
-          No vamos a Madrid a buscar lo que ya tenemos en la calle Tejares, en el Mercado
-          de Carretas o en una taberna del centro. Nuestra ruta empieza y termina aquí: en
-          la ciudad y en la provincia que conocemos de memoria — desde las croquetas con
-          estrella de <strong>La Bechamel</strong> hasta el kebab de barrio que cierra a las cuatro
-          de la madrugada.
-        </p>
+          <p class="albacete-body reveal reveal-delay-1">
+            No vamos a Madrid a buscar lo que ya tenemos en la calle Tejares, en el Mercado
+            de Carretas o en una taberna del centro. Nuestra ruta empieza y termina aquí: en
+            la ciudad y en la provincia que conocemos de memoria, desde las croquetas con
+            estrella de <strong>La Bechamel</strong> hasta el kebab de barrio que cierra a las cuatro
+            de la madrugada.
+          </p>
+        </div>
 
-        <div class="chips-row reveal reveal-delay-2" role="list" aria-label="Identidad gastronómica">
-          <span class="chip chip-local" role="listitem">📍 Albacete capital</span>
-          <span class="chip chip-manchego" role="listitem">🥘 Cocina manchega</span>
-          <span class="chip chip-michelin" role="listitem">⭐ Una estrella Michelin</span>
-          <span class="chip chip-barrio" role="listitem">🥙 Sabor de barrio</span>
+        <div class="albacete-right">
+
+          <div class="colabs-head reveal reveal-delay-2">
+            <span class="colabs-eyebrow">Han contado con nosotros</span>
+            <h3 class="colabs-title">Marcas y eventos con los que hemos colaborado</h3>
+          </div>
+
+          <div class="colabs-grid">
+
+          <article class="colab-card reveal reveal-delay-1">
+            <span class="colab-tag">Automoción</span>
+            <h4 class="colab-name">Ford</h4>
+            <p class="colab-desc">Ruta de la croqueta a bordo de un Ford por cinco joyas de la ciudad.</p>
+          </article>
+
+          <article class="colab-card reveal reveal-delay-2">
+            <span class="colab-tag">Restauración</span>
+            <h4 class="colab-name">McDonald’s</h4>
+            <p class="colab-desc">Contenido de marca probando sus novedades en los locales de Albacete.</p>
+          </article>
+
+          <article class="colab-card reveal reveal-delay-3">
+            <span class="colab-tag">Alta cocina</span>
+            <h4 class="colab-name">Cañitas Maite</h4>
+            <p class="colab-desc">Visita al dos estrellas Michelin de Javier Sanz y Juan Sahuquillo en Casas-Ibáñez.</p>
+          </article>
+
+          <article class="colab-card reveal reveal-delay-4">
+            <span class="colab-tag">Repostería</span>
+            <h4 class="colab-name">Miguelitos Ruiz</h4>
+            <p class="colab-desc">Los míticos miguelitos de La Roda, directos desde su obrador.</p>
+          </article>
+
+          <article class="colab-card reveal reveal-delay-5">
+            <span class="colab-tag">Evento</span>
+            <h4 class="colab-name">The Champion Burger</h4>
+            <p class="colab-desc">Cobertura del campeonato nacional de hamburguesas a su paso por la provincia.</p>
+          </article>
+
+          <article class="colab-card reveal reveal-delay-6">
+            <span class="colab-tag">Evento</span>
+            <h4 class="colab-name">The Burger Cup</h4>
+            <p class="colab-desc">Seguimiento de la competición burger más disputada, hamburguesa a hamburguesa.</p>
+          </article>
+
+          </div>
+
         </div>
 
       </div>
@@ -449,71 +470,63 @@
 
         <div class="videos-grid">
 
-          <!-- Vídeo 1 — TODO: reemplazar src, título y estadísticas -->
           <article class="video-card reveal reveal-delay-1">
             <div class="video-wrap">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_1"
-                title="Vídeo viral 1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.tiktok.com/player/v1/7468993406878911746"
+                title="Seven Joy — Review Sabores de Aventuras"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowfullscreen
                 loading="lazy"></iframe>
             </div>
             <div class="video-meta">
               <span class="video-platform video-platform-tiktok">TikTok</span>
-              <p class="video-title">Título del vídeo 1</p>
-              <span class="video-views">0 visualizaciones</span>
+              <p class="video-title">Seven Joy — Review completo</p>
             </div>
           </article>
 
-          <!-- Vídeo 2 — TODO: reemplazar src, título y estadísticas -->
           <article class="video-card reveal reveal-delay-2">
             <div class="video-wrap">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_2"
-                title="Vídeo viral 2"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.tiktok.com/player/v1/7483879870129360150"
+                title="El mejor kebab de Albacete — Sabores de Aventuras"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowfullscreen
                 loading="lazy"></iframe>
             </div>
             <div class="video-meta">
               <span class="video-platform video-platform-tiktok">TikTok</span>
-              <p class="video-title">Título del vídeo 2</p>
-              <span class="video-views">0 visualizaciones</span>
+              <p class="video-title">El mejor kebab de Albacete</p>
             </div>
           </article>
 
-          <!-- Vídeo 3 — TODO: reemplazar src, título y estadísticas -->
           <article class="video-card reveal reveal-delay-3">
             <div class="video-wrap">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_3"
-                title="Vídeo viral 3"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.tiktok.com/player/v1/7603267260672789782"
+                title="+ideas para comer en Albacete — Sabores de Aventuras"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowfullscreen
                 loading="lazy"></iframe>
             </div>
             <div class="video-meta">
               <span class="video-platform video-platform-tiktok">TikTok</span>
-              <p class="video-title">Título del vídeo 3</p>
-              <span class="video-views">0 visualizaciones</span>
+              <p class="video-title">+ideas para comer en Albacete</p>
             </div>
           </article>
 
-          <!-- Vídeo 4 — TODO: reemplazar src, título y estadísticas -->
           <article class="video-card reveal reveal-delay-4">
             <div class="video-wrap">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_4"
-                title="Vídeo viral 4"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.tiktok.com/player/v1/7466761236370279702"
+                title="La Mediterránea — Sabores de Aventuras"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowfullscreen
                 loading="lazy"></iframe>
             </div>
             <div class="video-meta">
               <span class="video-platform video-platform-tiktok">TikTok</span>
-              <p class="video-title">Título del vídeo 4</p>
-              <span class="video-views">0 visualizaciones</span>
+              <p class="video-title">La Mediterránea</p>
             </div>
           </article>
 
@@ -538,10 +551,9 @@
           <!-- 1. Croquetas -->
           <article class="food-card-outer reveal reveal-delay-1">
             <div class="food-card food-card-paper">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&q=80"
-                   alt="Croquetas doradas y crujientes sobre superficie de madera"
+                   src="croqueta.jpg"
+                   alt="Croquetas probadas por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Croquetas</h3>
@@ -553,10 +565,9 @@
           <!-- 2. Kebabs -->
           <article class="food-card-outer reveal reveal-delay-2">
             <div class="food-card food-card-rose">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80"
-                   alt="Pita kebab con carne, patatas fritas, tomate y cebolla"
+                   src="kebab.jpg"
+                   alt="Kebab probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Kebabs</h3>
@@ -568,10 +579,9 @@
           <!-- 3. Almuerzos -->
           <article class="food-card-outer reveal reveal-delay-3">
             <div class="food-card food-card-butter">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80"
-                   alt="Tostada con tomate y café con leche en desayuno español"
+                   src="almuerzos.jpg"
+                   alt="Almuerzo albaceteño probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Almuerzos albaceteños</h3>
@@ -583,10 +593,9 @@
           <!-- 4. Michelin -->
           <article class="food-card-outer reveal reveal-delay-4">
             <div class="food-card food-card-paper">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
-                   alt="Plato de alta cocina con presentación artística y salsa"
+                   src="creativa.jpg"
+                   alt="Plato de cocina creativa probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Cocina creativa</h3>
@@ -598,10 +607,9 @@
           <!-- 5. Asiática -->
           <article class="food-card-outer reveal reveal-delay-5">
             <div class="food-card food-card-rose">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80"
-                   alt="Bol de ramen caliente con fideos, huevo y caldo oscuro"
+                   src="asiatica.jpg"
+                   alt="Plato de cocina asiática probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Asiática</h3>
@@ -613,10 +621,9 @@
           <!-- 6. Hamburguesas -->
           <article class="food-card-outer reveal reveal-delay-6">
             <div class="food-card food-card-butter">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80"
-                   alt="Hamburguesa gourmet con doble carne, queso fundido y vegetales"
+                   src="hamburguesa.jpg"
+                   alt="Hamburguesa probada por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Hamburguesas y bocatas</h3>
@@ -628,10 +635,9 @@
           <!-- 7. Tapeo -->
           <article class="food-card-outer reveal reveal-delay-7">
             <div class="food-card food-card-paper">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
-                   alt="Tabla de tapas españolas variadas en barra de bar"
+                   src="tapeo.jpg"
+                   alt="Tapeo manchego probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Tapeo y manchego</h3>
@@ -643,14 +649,27 @@
           <!-- 8. Dulce -->
           <article class="food-card-outer reveal reveal-delay-8">
             <div class="food-card food-card-rose">
-              <!-- TODO: Reemplazar por foto propia -->
               <img class="food-card-img"
-                   src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80"
-                   alt="Croissant de mantequilla recién horneado sobre papel"
+                   src="dulce.jpg"
+                   alt="Dulce de obrador probado por Sabores de Aventuras"
                    loading="lazy" />
               <div class="food-card-body">
                 <h3 class="food-card-title">Dulce y panadería</h3>
                 <p class="food-card-copy">Torrijas de Semana Santa, New York Rolls de pistacho y obrador: Barú, Suiza, Don Cardenal, La Noguera.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Arroces y paella -->
+          <article class="food-card-outer reveal reveal-delay-8">
+            <div class="food-card food-card-butter">
+              <img class="food-card-img"
+                   src="paella.jpg"
+                   alt="Paella probada por Sabores de Aventuras"
+                   loading="lazy" />
+              <div class="food-card-body">
+                <h3 class="food-card-title">Arroces y paella</h3>
+                <p class="food-card-copy">Del arroz meloso a la paella de domingo. Cocina tradicional de cuchara y sartén que nunca falta en nuestras rutas.</p>
               </div>
             </div>
           </article>
@@ -742,6 +761,80 @@
             </article>
 
           </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         TESTIMONIOS
+         ══════════════════════════════════════════════════════ -->
+    <section class="testimonios" id="testimonios" aria-labelledby="testimonios-title">
+      <div class="testimonios-inner">
+
+        <div class="section-header">
+          <span class="eyebrow reveal">💬 Lo que dicen</span>
+          <h2 class="section-title reveal" id="testimonios-title">Los que han confiado en nosotros</h2>
+          <p class="section-subtitle reveal reveal-delay-1">Restaurantes y marcas que han colaborado con Sabores de Aventuras.</p>
+        </div>
+
+        <div class="testimonios-grid">
+
+          <article class="testimonio-card reveal reveal-delay-1">
+            <div class="testimonio-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonio-quote">
+              Muy honestos, muy cercanos y claros, con ganas de crecer. Recibimos un trato muy agradable y seguro que repetiremos.
+            </blockquote>
+            <div class="testimonio-footer">
+              <div class="testimonio-avatar" aria-hidden="true">JM</div>
+              <div>
+                <div class="testimonio-author">Juan Monteagudo</div>
+                <div class="testimonio-role">Chef michelín · Ababol y La Bechamel</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card reveal reveal-delay-2">
+            <div class="testimonio-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonio-quote">
+              El paso de Carla y Adrián fue increíble. La repercusión fue total.
+            </blockquote>
+            <div class="testimonio-footer">
+              <div class="testimonio-avatar" aria-hidden="true">MC</div>
+              <div>
+                <div class="testimonio-author">Mari Carmen</div>
+                <div class="testimonio-role">Propietaria · Tapería Frida</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card reveal reveal-delay-3">
+            <div class="testimonio-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonio-quote">
+              Nos gusta su manera de transmitir las ideas en los vídeos. Son gente local y crean vídeos muy dinámicos.
+            </blockquote>
+            <div class="testimonio-footer">
+              <div class="testimonio-avatar" aria-hidden="true">DB</div>
+              <div>
+                <div class="testimonio-author">Daniel</div>
+                <div class="testimonio-role">Dueño · Burger Lab</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card reveal reveal-delay-4">
+            <div class="testimonio-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonio-quote">
+              Estoy muy contenta con el vídeo de Carla y Adrián. Fue muy original y tuvo una gran repercusión.
+            </blockquote>
+            <div class="testimonio-footer">
+              <div class="testimonio-avatar" aria-hidden="true">MD</div>
+              <div>
+                <div class="testimonio-author">Mayte</div>
+                <div class="testimonio-role">Responsable · DaVinci</div>
+              </div>
+            </div>
+          </article>
 
         </div>
       </div>
@@ -952,6 +1045,7 @@
           <li><a href="#albacete">Albacete</a></li>
           <li><a href="#videos">Vídeos</a></li>
           <li><a href="#comidas">Comidas</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#mapa">Mapa</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
