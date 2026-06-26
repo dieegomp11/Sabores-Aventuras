@@ -48,6 +48,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,7 +57,27 @@ body {
   color: var(--h-text);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
+
+/* Anti-overflow: los hijos de grid/flex tienen min-width:auto por defecto
+   y no encogen cuando su contenido (iframes, imágenes, texto largo) es ancho.
+   min-width:0 les permite comprimirse y evita el scroll horizontal en móvil. */
+.videos-grid > *,
+.food-grid > *,
+.colabs-grid > *,
+.testimonios-grid > *,
+.historia-inner > *,
+.albacete-inner > *,
+.contacto-inner > *,
+.mapa-layout > * {
+  min-width: 0;
+}
+
+/* Medios nunca desbordan su contenedor */
+img, svg, iframe, video { max-width: 100%; }
 
 img {
   display: block;
@@ -118,7 +139,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Logo */
 .loader-logo-img {
-  width: clamp(160px, 42vw, 230px);
+  width: clamp(150px, 42vw, 230px);
+  max-width: 78vw;
   height: auto;
   display: block;
   animation: loaderLogoPulse 2.4s var(--ease-in-out-soft) infinite;
@@ -309,14 +331,16 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(20px, 2.4vw, 30px);
   line-height: 1;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 4px;
   flex-shrink: 0;
+  min-width: 0;
   text-decoration: none;
 }
 .navbar-logo-img {
-  height: clamp(40px, 5.5vw, 52px);
+  height: clamp(38px, 5vw, 50px);
   width: auto;
+  max-width: 70vw;
   display: block;
 }
 .logo-sabores  { color: var(--h-rose); }
@@ -977,12 +1001,13 @@ a { color: inherit; text-decoration: none; }
 
 .albacete-manifesto {
   font-family: 'Baloo 2', system-ui, sans-serif;
-  font-size: clamp(3.5rem, 12vw, 10rem);
+  font-size: clamp(2.75rem, 12vw, 10rem);
   font-weight: 800;
   color: var(--h-text);
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin-bottom: 2.5rem;
+  overflow-wrap: break-word;
 }
 
 .albacete-body {
@@ -1084,15 +1109,26 @@ a { color: inherit; text-decoration: none; }
 
 .videos-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.25rem;
   margin-top: 3rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 641px) {
+  .videos-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+  }
 }
 
 @media (min-width: 1025px) {
   .videos-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    max-width: none;
   }
 }
 
