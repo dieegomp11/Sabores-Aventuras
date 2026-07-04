@@ -1508,8 +1508,10 @@ a { color: inherit; text-decoration: none; }
 
 .mapa-detail-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;       /* miniatura izquierda + info derecha: cabe todo sin scroll */
+  align-items: stretch;      /* la columna de texto ocupa toda la altura */
   flex: 1;
+  min-height: 0;
 }
 .mapa-detail-content.fade-in {
   animation: detailFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1520,15 +1522,21 @@ a { color: inherit; text-decoration: none; }
 }
 
 .mapa-detail-img-wrap {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
+  width: 42%;
+  max-width: 260px;
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
   background: rgba(158, 217, 210, 0.12);
+  overflow: hidden;
 }
+.mapa-detail-img-wrap[hidden] { display: none; }
 #mapa-detail-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;            /* miniatura entera, a su proporción real, sin recortar */
+  max-height: 100%;
+  object-fit: contain;
   display: block;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1541,10 +1549,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .mapa-detail-body {
-  padding: 1.5rem;
+  padding: 1.35rem 1.4rem;
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;  /* info arriba, botones abajo: sin huecos muertos */
+  gap: 0.75rem;
 }
 
 .mapa-detail-meta {
@@ -1552,7 +1563,6 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.6rem;
 }
 
 .mapa-detail-tipo {
@@ -1576,50 +1586,65 @@ a { color: inherit; text-decoration: none; }
 
 .mapa-detail-nombre {
   font-family: 'Baloo 2', system-ui, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--h-text);
   letter-spacing: -0.02em;
   line-height: 1.15;
-  margin-bottom: 0.4rem;
 }
 
 .mapa-detail-dir {
   font-size: 0.8rem;
   color: var(--h-text-2);
   opacity: 0.85;
-  margin-bottom: 1rem;
   line-height: 1.45;
 }
 
 .mapa-detail-opinion {
   font-size: 0.95rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--h-text-2);
-  margin-bottom: 1.5rem;
-  flex: 1;
 }
 
+.mapa-detail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .mapa-detail-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  font-size: 0.875rem;
-  font-weight: 500;
+  gap: 0.45rem;
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--h-text);
   border: 1.5px solid rgba(158, 217, 210, 0.4);
-  padding: 0.7rem 1.25rem;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
-  align-self: flex-start;
   transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.2s;
   text-decoration: none;
 }
-.mapa-detail-cta:hover {
+.mapa-detail-cta[hidden] { display: none; }
+.mapa-detail-cta:hover { transform: translateY(-1px); }
+
+/* Vídeo — botón primario (relleno rosa) */
+.mapa-detail-video {
+  background: var(--h-rose);
+  border-color: var(--h-rose);
+  color: #fff;
+}
+.mapa-detail-video:hover {
+  background: #f598ab;
+  border-color: #f598ab;
+  color: #fff;
+}
+/* Google Maps — botón secundario (contorno mint) */
+.mapa-detail-maps:hover {
   border-color: var(--h-mint);
   background: rgba(158, 217, 210, 0.12);
   color: var(--h-text);
-  transform: translateY(-1px);
 }
 
 /* ─── Marker — el hover se aplica al SVG interno ────────── */
@@ -2067,17 +2092,14 @@ footer {
   gap: 2.5rem;
 }
 
-.footer-logo {
-  font-family: 'Baloo 2', system-ui, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
+.footer-logo-img {
+  height: 110px;
+  width: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  /* halo claro para que el azul del logo respire sobre el fondo oscuro */
+  filter: drop-shadow(0 0 14px rgba(255, 248, 245, 0.35));
 }
-.footer-logo .dot { color: var(--h-rose); }
 
 .footer-tagline {
   font-size: 0.875rem;
@@ -2135,6 +2157,28 @@ footer {
   color: rgba(255, 248, 245, 0.35);
   text-align: center;
 }
+
+/* Crédito FluentIA — "Crafted with (logo) Precision" */
+.footer-crafted {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 248, 245, 0.3);
+}
+.footer-fluentia-logo {
+  height: 1.8em;
+  width: auto;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.25s;
+}
+.footer-crafted a:hover .footer-fluentia-logo { opacity: 1; }
 
 /* ──────────────────────────────────────────────────────────
    RESPONSIVE — TABLET (641px+)
@@ -2215,7 +2259,12 @@ footer {
     gap: 3rem;
     align-items: start;
   }
-  .albacete-manifesto { margin-bottom: 1.75rem; }
+  /* La columna izquierda es ~35% del ancho: el tamaño debe calcularse
+     sobre esa columna, no sobre el viewport, o "Albacete" se corta */
+  .albacete-manifesto {
+    font-size: clamp(3rem, 4.8vw, 5.25rem);
+    margin-bottom: 1.75rem;
+  }
   .colabs-grid { grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
 
   .mapa-layout {
@@ -2234,16 +2283,11 @@ footer {
     height: 100%;
     min-height: 0;
   }
-  /* Imagen del panel ocupa proporción fija; el body coge el resto y hace scroll si la opinión es larga */
-  .mapa-detail-img-wrap {
-    aspect-ratio: auto;
-    flex-shrink: 0;
-    height: 42%;
-    max-height: 280px;
-  }
+  /* Miniatura izquierda + info derecha: todo visible sin scroll */
+  .mapa-detail-content { min-height: 0; }
   .mapa-detail-body {
     min-height: 0;
-    overflow-y: auto;
+    overflow-y: auto;   /* red de seguridad si la reseña es muy larga */
   }
 
   .contacto-inner { grid-template-columns: 45fr 55fr; gap: 5rem; }
