@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dieegomp11.github.io/Sabores-Aventuras/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/hero/adri-y-carla-sabores-de-aventuras.jpg</image:loc><image:title>Adri y Carla — Sabores de Aventuras</image:title></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/almuerzos-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/arroces-paella-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/cocina-asiatica-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/cocina-creativa-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/croquetas-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/dulce-panaderia-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/hamburguesas-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/kebab-albacete.jpg</image:loc></image:image>
+    <image:image><image:loc>https://dieegomp11.github.io/Sabores-Aventuras/img/categorias/tapeo-manchego-albacete.jpg</image:loc></image:image>
+  </url>
+</urlset>

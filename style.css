@@ -1294,7 +1294,7 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.5s var(--ease-out-expo);
 }
 .food-card-outer:hover .food-card-img { transform: scale(1.04); }
-.food-card-img[src="almuerzos.jpg"] { object-position: center 22%; }
+.food-card-img[src="img/categorias/almuerzos-albacete.jpg"] { object-position: center 22%; }
 
 .food-card-body {
   padding: 1.5rem;

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dieegomp11.github.io/Sabores-Aventuras/sitemap.xml

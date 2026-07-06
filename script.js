@@ -150,7 +150,7 @@ function initMap() {
       38.991918,
       -1.853258
     ],
-    "imagen": "Miniaturas/Ditaly.jpg",
+    "imagen": "img/resenas/ditaly.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7364325261380193569",
     "opinion": "Pizza de las de verdad, con masa que se deja querer. De los sitios a los que apetece volver un viernes."
   },
@@ -162,7 +162,7 @@ function initMap() {
       37.9848849,
       -1.1333607
     ],
-    "imagen": "Miniaturas/PepicoTioGines.jpg",
+    "imagen": "img/resenas/pepico-del-tio-gines.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7370370549324844320",
     "opinion": "La marinera y el caballito que mandan en Murcia. Barra de toda la vida: caña, tapa y a ser feliz."
   },
@@ -174,7 +174,7 @@ function initMap() {
       38.9961956,
       -1.8526658
     ],
-    "imagen": "Miniaturas/Baru.jpg",
+    "imagen": "img/resenas/baru.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7373378618342477088",
     "opinion": "Café serio, croissant crujiente y un New York Roll que quita las penas. Rincón perfecto para desconectar."
   },
@@ -186,7 +186,7 @@ function initMap() {
       38.98728,
       -1.8524117
     ],
-    "imagen": "Miniaturas/Dolomiti.jpg",
+    "imagen": "img/resenas/dolomiti.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7381444366478593312",
     "opinion": "Tabla de quesos, ensalada Dolomiti y su pizza de la casa. Vinimos a por la pizza y nos quedamos con todo."
   },
@@ -198,7 +198,7 @@ function initMap() {
       38.9967146,
       -1.8667424
     ],
-    "imagen": "Miniaturas/TascaFeria.jpg",
+    "imagen": "img/resenas/tasca-la-feria.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7382530887839141153",
     "opinion": "Caracoles, mancheguito, tigres, oreja, rabo y queso frito. Tapeo de feria del que no se olvida."
   },
@@ -210,7 +210,7 @@ function initMap() {
       38.9962367,
       -1.8672963
     ],
-    "imagen": "Miniaturas/Boulangerie.jpg",
+    "imagen": "img/resenas/boulangerie.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7386265453758385441",
     "opinion": "Croissants de pistacho, de mantequilla y de almendra recién hechos. Huele a horno desde la puerta."
   },
@@ -222,7 +222,7 @@ function initMap() {
       40.4314106,
       -3.6748618
     ],
-    "imagen": "Miniaturas/BellsCookied.jpg",
+    "imagen": "img/resenas/bell-s-cookies.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7391420696691313953",
     "opinion": "Cookies chunk, de tarta de queso y de cacahuete. Merienda seria para golosos serios."
   },
@@ -234,7 +234,7 @@ function initMap() {
       38.9966601,
       -1.8647999
     ],
-    "imagen": "Miniaturas/TascaJavi.jpg",
+    "imagen": "img/resenas/tasca-javi.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7392598653782756641",
     "opinion": "Caracoles, bravas, calamares, oreja y queso frito. Tasca honesta de caña y tapa que nunca falla."
   },
@@ -246,7 +246,7 @@ function initMap() {
       40.4219987,
       -3.7076168
     ],
-    "imagen": "Miniaturas/KaitenSushi.jpg",
+    "imagen": "img/resenas/kaiten-sushi.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7394006104860003616",
     "opinion": "Ensalada japonesa, gyozas, nigiris y pollo al limón. Sushi en cinta que entretiene y cumple."
   },
@@ -258,7 +258,7 @@ function initMap() {
       39.007035,
       -1.8681204
     ],
-    "imagen": "Miniaturas/MondaLironda.jpg",
+    "imagen": "img/resenas/la-monda-lironda.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7398143205717331232",
     "opinion": "Bravas, queso frito, croquetas y chusmarro manchego. Tapeo de barrio del bueno."
   },
@@ -270,7 +270,7 @@ function initMap() {
       38.8450292,
       0.1085086
     ],
-    "imagen": "Miniaturas/LaBahia.jpg",
+    "imagen": "img/resenas/la-bahia.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7403649380303064352",
     "opinion": "Fritura, tortitas de camarones y cazón en adobo. Sabor a sur sin salir de Albacete."
   },
@@ -282,7 +282,7 @@ function initMap() {
       38.9922925,
       -1.8485872
     ],
-    "imagen": "Miniaturas/Envero.jpg",
+    "imagen": "img/resenas/el-envero.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7410825558197751073",
     "opinion": "La bomba de queso, bravas y brochetas. Ambiente honesto, precio majo y ganas de volver."
   },
@@ -294,7 +294,7 @@ function initMap() {
       38.9930577,
       -1.8524776
     ],
-    "imagen": "Miniaturas/Hype.jpg",
+    "imagen": "img/resenas/hype.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7411493327033371936",
     "opinion": "Su Hyped Chicken, alitas en salsa kimchi y hamburguesas con descaro. Pollo frito del que engancha."
   },
@@ -306,7 +306,7 @@ function initMap() {
       38.98889,
       -1.8532489
     ],
-    "imagen": "Miniaturas/Catacaldos.jpg",
+    "imagen": "img/resenas/catacaldos.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7414500904239385888",
     "opinion": "Milhoja de berenjena y canelón de pato confitado. Producto de verdad y buena mano."
   },
@@ -318,7 +318,7 @@ function initMap() {
       38.9912874,
       -1.8533625
     ],
-    "imagen": "Miniaturas/Negrita.jpg",
+    "imagen": "img/resenas/la-negrita.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7424119456240061729",
     "opinion": "Arepas, empanadilla caribeña, patacón y hamburguesas. Sabor caribeño con mucho ritmo."
   },
@@ -330,7 +330,7 @@ function initMap() {
       38.9969289,
       -1.8495893
     ],
-    "imagen": "Miniaturas/Frida.jpg",
+    "imagen": "img/resenas/taperia-frida.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7424807094722874656",
     "opinion": "Tapas que viajan: Portugal, México y Perú en una misma mesa. Cocina viajera para sentarse con tiempo."
   },
@@ -342,7 +342,7 @@ function initMap() {
       38.9909194,
       -1.85367
     ],
-    "imagen": "Miniaturas/Motivos.jpg",
+    "imagen": "img/resenas/taberna-motivos.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7431868043761929505",
     "opinion": "Croquetas de las mejores de la ciudad, huevos rotos y fideuá de secreto. Punto."
   },
@@ -354,7 +354,7 @@ function initMap() {
       38.9928416,
       -1.8601268
     ],
-    "imagen": "Miniaturas/DonCardenal.jpg",
+    "imagen": "img/resenas/don-cardenal.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7434857646060096801",
     "opinion": "Pasteles de tiramisú, red velvet y de Oreo. Obrador de los de siempre, vitrina de las que hacen dudar."
   },
@@ -366,7 +366,7 @@ function initMap() {
       39.0006256,
       -1.8674521
     ],
-    "imagen": "Miniaturas/Esparcia.jpg",
+    "imagen": "img/resenas/panaderia-esparcia.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7442246568809401632",
     "opinion": "Su toña es de las que se compran dos por si acaso. Panadería de toda la vida."
   },
@@ -378,7 +378,7 @@ function initMap() {
       38.9924969,
       -1.8585844
     ],
-    "imagen": "Miniaturas/Himawari.jpg",
+    "imagen": "img/resenas/himawari-ramen.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7447067503055981856",
     "opinion": "Gamba furai, takoyaki y ramen de caldo trabajado. Producto fresco y bien tratado."
   },
@@ -390,7 +390,7 @@ function initMap() {
       38.9913978,
       -1.8486137
     ],
-    "imagen": "Miniaturas/AlbaKebab.jpg",
+    "imagen": "img/resenas/alba-kebab.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7450088833489571104",
     "opinion": "Dürüm, pita y pizza kebab sin postureo. Nada de kebab de turismo: de los que repites."
   },
@@ -402,7 +402,7 @@ function initMap() {
       38.9965647,
       -1.8584784
     ],
-    "imagen": "Miniaturas/DeliciasOriente.jpg",
+    "imagen": "img/resenas/delicias-de-oriente.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7463410582184594710",
     "opinion": "Desayuno beldi y fassi como en Marrakech. Dulce árabe que te teletransporta."
   },
@@ -414,7 +414,7 @@ function initMap() {
       38.9896276,
       -1.8628356
     ],
-    "imagen": "Miniaturas/Masterchef.jpg",
+    "imagen": "img/resenas/masterchef-kebab.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7467513045762313495",
     "opinion": "Patatas gratinadas y pan de pita con queso. Para un antojo a cualquier hora."
   },
@@ -426,7 +426,7 @@ function initMap() {
       38.9930045,
       -1.8537636
     ],
-    "imagen": "Miniaturas/PrincesaMaya.jpg",
+    "imagen": "img/resenas/princesa-maya.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7468259887844183318",
     "opinion": "Nachos Maya, tacos gobernador y taco de cochinita. México auténtico en plena calle Mayor."
   },
@@ -438,7 +438,7 @@ function initMap() {
       39.0084841,
       -1.872778
     ],
-    "imagen": "Miniaturas/SevenJoy.jpg",
+    "imagen": "img/resenas/seven-joy.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7468993406878911746",
     "opinion": "Bao de pato, pulpitos, ternera al sake, gyozas y nigiris. Asiático que sorprende en Albacete."
   },
@@ -450,7 +450,7 @@ function initMap() {
       38.9984937,
       -1.8653767
     ],
-    "imagen": "Miniaturas/MilangaLove.jpg",
+    "imagen": "img/resenas/milanga-love.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7469728861006105879",
     "opinion": "Empanadas argentinas y milanesas de matrícula. Cocina porteña honesta y sin pretensiones."
   },
@@ -462,7 +462,7 @@ function initMap() {
       39.0075632,
       -1.8799147
     ],
-    "imagen": "Miniaturas/BurgerLab.jpg",
+    "imagen": "img/resenas/burger-lab.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7470494558812507415",
     "opinion": "Costillar y las hamburguesas Geisha y Muerte by Cheese. Los nombres prometen y cumplen."
   },
@@ -474,7 +474,7 @@ function initMap() {
       38.9962129,
       -1.8639267
     ],
-    "imagen": "Miniaturas/HoySushi.jpg",
+    "imagen": "img/resenas/hoy-sushi.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7472709873575251222",
     "opinion": "Carpaccio de atún, gyozas, jackimeshi y su ternera Hoy. Buffet japonés que va en serio."
   },
@@ -486,7 +486,7 @@ function initMap() {
       38.9918908,
       -1.8531533
     ],
-    "imagen": "Miniaturas/LaBechamel.jpg",
+    "imagen": "img/resenas/la-bechamel.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7473462574764461334",
     "opinion": "Buñuelo de queso, bollito de chorizo y la croqueta campeona de España 2023. Alta cocina que se entiende."
   },
@@ -498,7 +498,7 @@ function initMap() {
       38.9868403,
       -1.8658556
     ],
-    "imagen": "Miniaturas/KhanKebab.jpg",
+    "imagen": "img/resenas/khan-kebab.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7474183084879957270",
     "opinion": "Patatas gratinadas, pizza kebab y rollo doble con queso. Kebab contundente del que mancha."
   },
@@ -510,7 +510,7 @@ function initMap() {
       38.9938812,
       -1.8605292
     ],
-    "imagen": "Miniaturas/FiloNavaja.jpg",
+    "imagen": "img/resenas/filo-de-la-navaja.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7474940351774575894",
     "opinion": "Cascos de patata, bacalao rebozado, ajo mataero, oreja y queso frito. Tapeo albaceteño en estado puro."
   },
@@ -522,7 +522,7 @@ function initMap() {
       39.0022637,
       -1.8636986
     ],
-    "imagen": "Miniaturas/TahaTurk.jpg",
+    "imagen": "img/resenas/taha-turk.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7477556003970616598",
     "opinion": "Box al horno, kebab de pita y su súper dürüm. Para un antojo a cualquier hora."
   },
@@ -534,7 +534,7 @@ function initMap() {
       39.0021291,
       -1.866576
     ],
-    "imagen": "Miniaturas/Dallas.jpg",
+    "imagen": "img/resenas/dallas.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7482011167100062998",
     "opinion": "Croquetas, gazpachos manchegos, bravas y solomillo de ternera. Clásico del barrio El Pilar."
   },
@@ -546,7 +546,7 @@ function initMap() {
       39.4397773,
       -1.9484167
     ],
-    "imagen": "Miniaturas/CasaJuanjo.jpg",
+    "imagen": "img/resenas/casa-juanjo.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7483125478241389846",
     "opinion": "Pulpo bien tratado y su hamburguesa Diosa. Cocina para sentarse con tiempo en Villanueva de la Jara."
   },
@@ -558,7 +558,7 @@ function initMap() {
       38.9891459,
       -1.8621015
     ],
-    "imagen": "Miniaturas/Farah.jpg",
+    "imagen": "img/resenas/farah.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7486461667522481430",
     "opinion": "Alitas, kebab de pita y rollo gratinado. Cumple a cualquier hora y a buen precio."
   },
@@ -570,7 +570,7 @@ function initMap() {
       38.494542,
       -2.242612
     ],
-    "imagen": "Miniaturas/MesonSierra.jpg",
+    "imagen": "img/resenas/meson-de-la-sierra.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7489419512786275606",
     "opinion": "Sopa, alcachofas con jamón y ensalada manchega. Cocina serrana de la que reconforta."
   },
@@ -582,7 +582,7 @@ function initMap() {
       38.9884457,
       -1.8658566
     ],
-    "imagen": "Miniaturas/Titanic.jpg",
+    "imagen": "img/resenas/titanic-ii.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7491644144012578070",
     "opinion": "Empanadas, papas locas, nachos y costillar BBQ. Raciones generosas para ir en grupo."
   },
@@ -594,7 +594,7 @@ function initMap() {
       38.994174,
       -1.8551792
     ],
-    "imagen": "Miniaturas/Piacere.jpg",
+    "imagen": "img/resenas/piacere.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7493866071053716758",
     "opinion": "Helados de pistacho, de miguelito y de tiramisú de mango. Artesano del que sabe a de verdad."
   },
@@ -606,7 +606,7 @@ function initMap() {
       38.9940662,
       -1.8515342
     ],
-    "imagen": "Miniaturas/Keiji.jpg",
+    "imagen": "img/resenas/keiji-by-joel.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7499054160239709462",
     "opinion": "Gyoza de rabo de toro, tabla de uramakis y nigiris. Nikkei con cabeza y producto serio."
   },
@@ -618,7 +618,7 @@ function initMap() {
       38.9953677,
       -1.8527723
     ],
-    "imagen": "Miniaturas/Kagura.jpg",
+    "imagen": "img/resenas/ramen-kagura.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7504631008168316182",
     "opinion": "Gyozas Kaoru, karaage y su Tokyo Soba Tower. Cuenco que reconforta en cualquier época."
   },
@@ -630,7 +630,7 @@ function initMap() {
       38.9906841,
       -1.8463686
     ],
-    "imagen": "Miniaturas/Loops.jpg",
+    "imagen": "img/resenas/loops.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7508343785953299734",
     "opinion": "Donuts artesanos rellenos que entran solos. Parada dulce obligada en Albacenter."
   },
@@ -642,7 +642,7 @@ function initMap() {
       38.993509,
       -1.8592978
     ],
-    "imagen": "Miniaturas/Oleana.jpg",
+    "imagen": "img/resenas/oleana.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7510195931451510038",
     "opinion": "Bravas, oreja crujiente, huevos rotos y arroz a la llauna. Con carta sin gluten de verdad."
   },
@@ -654,7 +654,7 @@ function initMap() {
       38.9952837,
       -1.8575263
     ],
-    "imagen": "Miniaturas/LaNoguera.jpg",
+    "imagen": "img/resenas/la-noguera.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7513535205496409366",
     "opinion": "Su tarta de queso es de las que se recuerdan. Obrador serio en la calle Zapateros."
   },
@@ -666,7 +666,7 @@ function initMap() {
       38.9954094,
       -1.8554548
     ],
-    "imagen": "Miniaturas/Tsuruta.jpg",
+    "imagen": "img/resenas/tsuruta-ramen.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7515401126993218838",
     "opinion": "Gyozas, wantón frito, bao de pato y combo de chicken curry. Producto fresco y bien tratado."
   },
@@ -678,7 +678,7 @@ function initMap() {
       38.9960051,
       -1.8673686
     ],
-    "imagen": "Miniaturas/Brocata.jpg",
+    "imagen": "img/resenas/brocata.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7517265377219513602",
     "opinion": "Patatas Bro, sándwich japonés y el bocata Brocata. Una de las aperturas del año."
   },
@@ -690,7 +690,7 @@ function initMap() {
       38.9945341,
       -1.8545797
     ],
-    "imagen": "Miniaturas/BarraPintxos.jpg",
+    "imagen": "img/resenas/barra-pintxos.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7525077948311915798",
     "opinion": "Ensalada de burrata y brioches de carrillera y de rabo de toro. Pintxos finos en pleno Altozano."
   },
@@ -702,7 +702,7 @@ function initMap() {
       38.9931338,
       -1.852645
     ],
-    "imagen": "Miniaturas/Monumental.jpg",
+    "imagen": "img/resenas/monumental.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7537657869064260886",
     "opinion": "Flor de alcachofa, berenjena, canelón de bogavante y tataki de atún. Producto de verdad y buena mano."
   },
@@ -714,7 +714,7 @@ function initMap() {
       38.9961905,
       -1.8678108
     ],
-    "imagen": "Miniaturas/Estambul.jpg",
+    "imagen": "img/resenas/kebab-estambul.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7543595743005756694",
     "opinion": "Box gratinado y rollo gratinado con queso fundido. Distinto a lo habitual y engancha."
   },
@@ -726,7 +726,7 @@ function initMap() {
       38.993864,
       -1.8533913
     ],
-    "imagen": "Miniaturas/Xpecado.jpg",
+    "imagen": "img/resenas/xpecado.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7582593484482301206",
     "opinion": "Alitas Kentucky y smash burgers con buen sello. Un pecado, nunca mejor dicho."
   },
@@ -738,7 +738,7 @@ function initMap() {
       38.9914887,
       -1.8538753
     ],
-    "imagen": "Miniaturas/TiaJuana.jpg",
+    "imagen": "img/resenas/la-tia-juana.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7568859402799762710",
     "opinion": "El Chacaloso, El Mentiroso, tacos al pastor y birria. Fiesta mexicana en la calle Tejares."
   },
@@ -750,7 +750,7 @@ function initMap() {
       39.0069063,
       -1.8691232
     ],
-    "imagen": "Miniaturas/Vibra.jpg",
+    "imagen": "img/resenas/vibra.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7574787284071910678",
     "opinion": "Hamburguesas de carne madurada con buen sello. Smash del que engancha."
   },
@@ -762,7 +762,7 @@ function initMap() {
       38.9914037,
       -1.8536421
     ],
-    "imagen": "Miniaturas/LaYema.jpg",
+    "imagen": "img/resenas/la-yema.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7577379243672243479",
     "opinion": "Tortillas y croquetas de las de siempre. Tapeo de barrio del bueno."
   },
@@ -774,7 +774,7 @@ function initMap() {
       38.9963914,
       -1.858191
     ],
-    "imagen": "Miniaturas/StPatricks.jpg",
+    "imagen": "img/resenas/st-patrick-s.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7594836839555452182",
     "opinion": "Almuerzo de bocadillo y buena cerveza. Pub clásico del centro que nunca falla."
   },
@@ -786,7 +786,7 @@ function initMap() {
       38.962609,
       -1.443734
     ],
-    "imagen": "Miniaturas/+ideas.jpg",
+    "imagen": "img/resenas/mas-ideas.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7603267260672789782",
     "opinion": "Trampantojo, atascaburras, chupa-chups de queso de cabra y lomo de orza. Merece la escapada a Higueruela."
   },
@@ -798,7 +798,7 @@ function initMap() {
       39.0002357,
       -1.8617866
     ],
-    "imagen": "Miniaturas/Duna.jpg",
+    "imagen": "img/resenas/la-duna.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7613378635327655171",
     "opinion": "Croqueta de carrillera, pan bao y queso frito con chocolate blanco. Atrevido y funciona."
   },
@@ -810,7 +810,7 @@ function initMap() {
       39.0180935,
       -1.8779947
     ],
-    "imagen": "Miniaturas/PatioManica.jpg",
+    "imagen": "img/resenas/el-patio-de-la-manica.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7616047679554047254",
     "opinion": "Almuerzos con su bocadillo Baturro. De polígono: abundante y a buen precio."
   },
@@ -822,7 +822,7 @@ function initMap() {
       39.0120965,
       -1.8785972
     ],
-    "imagen": "Miniaturas/Alboroque.jpg",
+    "imagen": "img/resenas/alboroque.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7618357343583079702",
     "opinion": "El chivito de Campollano: almuerzo trabajador que no falla nunca."
   },
@@ -834,7 +834,7 @@ function initMap() {
       39.0033821,
       -1.867058
     ],
-    "imagen": "Miniaturas/ElAguila.jpg",
+    "imagen": "img/resenas/el-aguila.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7621588001725975830",
     "opinion": "Almuerzos con bocadillo personalizado. Tapeo de barrio honesto."
   },
@@ -846,7 +846,7 @@ function initMap() {
       38.9928881,
       -1.857374
     ],
-    "imagen": "Miniaturas/Freseria.jpg",
+    "imagen": "img/resenas/la-freseria.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7622978413870976278",
     "opinion": "Vasos de fresas con nata y fuente de chocolate. Parada dulce que salva cualquier tarde."
   },
@@ -858,7 +858,7 @@ function initMap() {
       38.9908092,
       -1.8564281
     ],
-    "imagen": "Miniaturas/MagnaCasino.jpg",
+    "imagen": "img/resenas/magna-casino.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7626296791662693654",
     "opinion": "Hamburguesas Korean Krupier y Full Dry. Apuesta segura, nunca mejor dicho."
   },
@@ -870,7 +870,7 @@ function initMap() {
       38.9886068,
       -1.8636226
     ],
-    "imagen": "Miniaturas/RoyalKebab.jpg",
+    "imagen": "img/resenas/royal-kebab.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7628888511986388246",
     "opinion": "Box gratinado, pan de pita y rollo gratinado. Kebab de los que repites."
   },
@@ -882,7 +882,7 @@ function initMap() {
       39.0008883,
       -1.8632283
     ],
-    "imagen": "Miniaturas/Cuerda.jpg",
+    "imagen": "img/resenas/cuerda.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7634139059073355010",
     "opinion": "Panipuri de ajo blanco, crème brûlée y tiramisú de bacalao. Cocina que juega y gana."
   },
@@ -894,7 +894,7 @@ function initMap() {
       38.9914786,
       -1.8535943
     ],
-    "imagen": "Miniaturas/HanFu.jpg",
+    "imagen": "img/resenas/han-fu.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7639653883337329942",
     "opinion": "Te montas el plato a tu gusto: panceta en salsa coreana, sashimi y nigiri de atún. Barbacoa coreana para ir en grupo."
   },
@@ -906,7 +906,7 @@ function initMap() {
       39.136382,
       -1.747661
     ],
-    "imagen": "Miniaturas/Mariquillas.jpg",
+    "imagen": "img/resenas/las-mariquillas.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7644170362040683778",
     "opinion": "Pisto, patatas al montón, huevo y chuletas de cordero. Manchego de verdad junto al Júcar."
   },
@@ -918,7 +918,7 @@ function initMap() {
       39.0043558,
       -1.8591934
     ],
-    "imagen": "Miniaturas/Luzia.jpg",
+    "imagen": "img/resenas/luzia.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7644918731012836630",
     "opinion": "Oreja melosa, taco de cochinita pibil y calamar a la andaluza. Producto de verdad y buena mano."
   },
@@ -930,7 +930,7 @@ function initMap() {
       38.9948409,
       -1.85724
     ],
-    "imagen": "Miniaturas/TartasJulita.jpg",
+    "imagen": "img/resenas/tartas-julita.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7649763547349568790",
     "opinion": "Tarta de queso con miguelito y tarta de crema catalana. Obrador casero de los de siempre."
   },
@@ -942,7 +942,7 @@ function initMap() {
       39.3978691,
       -2.0362799
     ],
-    "imagen": "Miniaturas/Babilonia.jpg",
+    "imagen": "img/resenas/babilonia.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7652288139804855574",
     "opinion": "Su hamburguesa Shelby, con costilla de cerdo y vaca gallega. Cena y fiesta en Casasimarro."
   },
@@ -954,7 +954,7 @@ function initMap() {
       38.9887011,
       -1.8819093
     ],
-    "imagen": "Miniaturas/LaJaula.jpg",
+    "imagen": "img/resenas/merendero-la-jaula.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7654898496847367446",
     "opinion": "Queso frito, croquetas, chuletón y carne a la brasa. Merendero de sobremesa larga."
   },
@@ -966,7 +966,7 @@ function initMap() {
       38.9958342,
       -1.8585762
     ],
-    "imagen": "Miniaturas/Mediterranea.jpg",
+    "imagen": "img/resenas/la-mediterranea.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7466761236370279702",
     "opinion": "Hummus, baba ganoush, pastela de pollo con almendra y briwat de atún. Viaje a Oriente en la calle Feria."
   },
@@ -978,7 +978,7 @@ function initMap() {
       38.9950456,
       -1.8601675
     ],
-    "imagen": "Miniaturas/KebabAlbacete.jpg",
+    "imagen": "img/resenas/kebab-albacete.jpg",
     "video": "https://www.tiktok.com/@saboresdeaventuras/video/7483879870129360150",
     "opinion": "Patatas gratinadas, kebab de pita y el doble queso gratinado. El kebab de nuestro vídeo más viral."
   }
